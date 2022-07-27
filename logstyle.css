@@ -1,0 +1,95 @@
+html{
+    height: 100%;
+   
+}
+body
+{
+    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/summer-background-abstract-background-wallpaper-use-for-presentation_HDDYoJOhMg_thumb.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:97%;
+}
+header
+{
+    height:10%;
+}
+
+div
+{
+    height:74%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+span
+{
+    font-size:70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#701925a9;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+.login
+{
+    font-size:25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: rgba(4, 116, 136, 0.95);
+    margin-top:43px;
+}
+.box{
+    background-color: #bb5f8d71;
+    border-radius: 10%;
+    width: 30%;
+    height: 50%;
+}
+p
+{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+section
+{
+    flex-flow: column;
+    margin-top:3%;
+    align-self: center;
+}
+#Uname, #pwd{
+    border:3px solid gray;
+    height:43px;
+    width:240px;
+    border-radius:17px;
+    margin-top:5px;
+}
+.btn{
+    
+    background-color:#FF69B4;
+    color: aliceblue;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius:10px;
+    width:25%;
+    margin-top:20px;
+    height:28px;
+    margin-left: 15%;
+}
+.btn:hover
+{
+    opacity:0.8;
+      
+}
+
+@media screen and (max-width:600px) 
+{
+    .login,.box
+    {
+      width:80%;
+      height:100%;
+    }
+}
