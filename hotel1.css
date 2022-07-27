@@ -1,0 +1,152 @@
+html
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+body
+{
+    margin:0%;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://media.architecturaldigest.com/photos/56c64d885ef3a2f746a41ffb/16:9/w_2580,c_limit/meyer-davis-guest-room-tips-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header
+{
+    width: 100%;
+    height: 9%;
+    position:relative;
+    
+}
+
+.topbar
+{
+    height: 100%;
+    width: 90%;  
+    background-color: rgba(0, 0, 0, 0.37);
+    margin-left: 4%;
+    margin-top: 3%; 
+    display: flex;     
+}
+.name
+{
+    height: 100%;
+    width: 20%;
+    font-size:50px;
+    font-weight: bolder;
+    color: rgba(123, 247, 247, 0.863);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.icon-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+  }
+  
+  .icon-bar p {
+    float: left;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 0;
+    color: rgba(123, 247, 247, 0.863);
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .icon-bar p:hover {
+    background-color: rgba(14, 230, 230, 0.685);
+  }
+  
+.content
+{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.sidebar
+{
+    width: 15%;
+    height: 86%;
+    background-color: rgba(0, 0, 0, 0.349);
+    margin-top: 2%;
+    margin-left: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+button
+{
+    height: 9%;
+    width: 55%;
+    margin-left:23%;
+    margin-bottom:10%;  
+    cursor:pointer;  
+    display: block;
+}
+.sidebar button:hover
+{
+   background-color: rgb(42, 183, 226) !important;
+}
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+.blog
+{
+    height: 86%;
+    width: 75%;
+    margin: 2%;
+    background-color: rgba(0, 255, 255, 0.425);    
+}
+section
+{
+    height: 40%;
+    width: 100%;
+    color: rgb(5, 2, 5);
+    font-size: large;
+    font-weight: 300;
+}
+.tour
+{
+    height: 86%;
+    width: 75%;
+    margin: 2%;   
+    background-color: rgba(0, 255, 255, 0.425);
+}
+img
+{
+    height: 70%;
+    width: 93%;
+    padding: 3%;
+ }
+.conc
+ {
+    height: 13%;
+    width: 40%;
+    position: absolute;
+    background-color: rgba(44, 24, 24, 0.5);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 15%;
+    text-align: center;
+ }
+footer
+{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.651);
+    height: 5%;
+    bottom: 4px;
+}
