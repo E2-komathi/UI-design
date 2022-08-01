@@ -8,43 +8,48 @@ body
     background-repeat: no-repeat;
     background-size:cover;
     height:97%;
+    width: 98%;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 header
 {
     height:10%;
 }
+ #Uname , #Pwd 
+ {
+    font-size: large;
+    color: rgb(35, 40, 43);
+    font-weight: bold;
+    margin-left: 12px;
+ }
+ #username , #userpass 
+ {
+     height: 10%;
+     width:90%;
+     align-self: center;
+ }
 
-div
+ #unerr , #paserr 
+ {
+    color: red;
+    height: 20px;
+    width: 80%;
+ }
+
+#loginbox
 {
-    height:74%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-span
-{
-    font-size:70px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#701925a9;
-    display: flex;
+    align-self: center;
+    height: 40%;
+    width: 27%;
+    background-color: #ff69b46b;
+    display:flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-}
-.login
-{
-    font-size:25px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-style: oblique;
-    color: rgba(4, 116, 136, 0.95);
-    margin-top:43px;
-}
-.box{
-    background-color: #bb5f8d71;
-    border-radius: 10%;
-    width: 30%;
-    height: 50%;
+    justify-content:center;
+    align-items:left;
 }
 p
 {
@@ -52,21 +57,9 @@ p
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
 }
-section
-{
-    flex-flow: column;
-    margin-top:3%;
-    align-self: center;
-}
-#Uname, #pwd{
-    border:3px solid gray;
-    height:43px;
-    width:240px;
-    border-radius:17px;
-    margin-top:5px;
-}
+
 .btn{
-    
+    align-self: center;
     background-color:#FF69B4;
     color: aliceblue;
     font-size: large;
@@ -74,10 +67,10 @@ section
     font-weight: bold;
     cursor: pointer;
     border-radius:10px;
-    width:25%;
-    margin-top:20px;
+    width:40%;
     height:28px;
-    margin-left: 15%;
+    margin-bottom: 10px;
+
 }
 .btn:hover
 {
