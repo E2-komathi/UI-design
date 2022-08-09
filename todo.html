@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="todo.css">
+    <title>ToDo</title>
+</head>
+<body>
+    <script src="todo.js"></script>
+    <div id="todo-heading">TODO Task</div>
+
+    <button id="btnuser" onclick="document.getElementById('todo-box').style.display='block'">Add User</button>
+    <p>Click the above button to Add the User</p>
+   
+    <!--pop up window-->
+      <div id="todo-box">
+        <i class="fa fa-close" id="close" onclick="document.getElementById('todo-box').style.display='none'"></i>
+        <input type="text" id="text" placeholder="Enter the UserName"> 
+        <button id="btn" type="submit" onclick=addElement()><i class='fa fa-user'></i> Add</button>
+
+        <input type="text" id="removeKey" placeholder="Enter Username to delete">
+        <button id="btn1" onclick=removeItem()><i class="fa fa-trash-o"></i> Trash</button>
+    
+    
+         <ul id="myUL">
+           
+         </ul>
+        </div>
+   
+
+</body>
+</html>
+
