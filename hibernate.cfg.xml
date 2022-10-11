@@ -4,19 +4,14 @@
    <session-factory>
       <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
       <property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-     <!--<property name = "hibernate.connection.url">jdbc:mysql://localhost/demo</property>--> 
-     <property name = "hibernate.connection.url">jdbc:mysql://localhost/mapping?useSSL=false</property>
+     <property name = "hibernate.connection.url">jdbc:mysql://localhost/demo</property> 
+    
       <property name = "hibernate.connection.username">java</property>
       <property name = "hibernate.connection.password">java</property>
-      <!--<mapping resource = "StudentDetails.xml"/>-->
-     <!-- <mapping resource="test/Tab1.xml"/>
-      <mapping resource="test/Tab2.xml"/> -->
-     <!-- <mapping  resource="test/Tab3.xml"/> -->
       
-     <!-- <mapping resource ="test/Emp.xml"/>
-      <mapping resource ="test/Empadd.xml"/> -->
       
-      <mapping resource="Sale.xml"/>
+            <mapping resource="test/EmpDet.xml"/>
+      
       
    </session-factory>
 </hibernate-configuration>
