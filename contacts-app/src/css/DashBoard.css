@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../styles/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SF-pro-display-semibold";
+    src: url("../styles/FontsFree-Net-SFProDisplay-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "SF-pro-display-bold";
+    src: url("../styles/SFPRODISPLAYBOLD.OTF");
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../styles/SFPRODISPLAYREGULAR.OTF");
+}
+
+.dashboard-heading {
+    text-align: left;
+    font: normal normal normal 12px/18px Poppins-Regular;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+    width: 96px;
+    height: 17px;
+    top: 78px;
+    left: 415px;
+}
+
+.dashboard-div {
+    box-shadow: 0px 10px 20px #00000034;
+    border-radius: 13px;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    width: 345px;
+    height: 447px;
+}
+
+.total-div {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 60%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.add-button {
+    width: 275px;
+    height: 50px;
+    border: none;
+    background-color: #82BA50;
+    border-radius: 8px;
+    text-align: center;
+    font: normal normal 600 14px/20px SF-pro-display-semibold;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.add-button:hover {
+    background-color: #35412C;
+    cursor: pointer;
+}
+
+.title-Text {
+    text-align: center;
+    font: normal normal bold 34px/20px SF-pro-display-bold;
+    letter-spacing: 0.32px;
+    color: #1E2432;
+    opacity: 1;
+}
+
+.user_img {
+    width: 136px;
+    height: 118px;
+}
+
+.group_img {
+    width: 211px;
+    height: 120px;
+}
+
+.system_img {
+    width: 151px;
+    height: 115px;
+}
+
+.line-inside-div {
+    text-align: left;
+    font: normal normal normal 15px/18px SF Pro Display;
+    letter-spacing: 0.32px;
+    color: #1E2432;
+    opacity: 1;
+    padding: 0px 22px;
+    height: 11%;
+}
