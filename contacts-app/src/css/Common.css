@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../styles/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SF-pro-display-semibold";
+    src: url("../styles/FontsFree-Net-SFProDisplay-Semibold.ttf");
+}
+
+@font-face {
+    font-family: "SF-pro-display-bold";
+    src: url("../styles/SFPRODISPLAYBOLD.OTF");
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("../styles/SFPRODISPLAYREGULAR.OTF");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../styles/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../styles/OpenSans-Regular.ttf");
+}
+
+.search-box-contents {
+    border: 1px solid #959191;
+    border-radius: 8px;
+}
+
+.searchBox {
+    display: flex;
+    flex-direction: row;
+    margin: 4px 5px;
+}
+
+.input {
+    border: none;
+    width: 80%;
+    margin: 0% 3%;
+    outline: none;
+}
+
+.search {
+    width: 20px;
+    height: 18px;
+    padding: 2px;
+}
+
+.search[type=text]:focus {
+    border: none;
+}
+
+.reset {
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.common-btn {
+    width: 200px;
+    height: 50px;
+    background-color: #448CCB;
+    font: normal normal 600 14px/20px SF-pro-display-semibold;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+}
+
+
+.Open_Sans_text_bold {
+    text-align: left;
+    font: normal normal bold 14px/20px OpenSans;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+.Open_Sans_text_Regular {
+    font: normal normal normal 14px/20px OpenSans-Regular;
+    letter-spacing: 0px;
+}
+
+.common-btn:hover {
+    background-color: #304455;
+    cursor: pointer;
+}
+
+.pagination-total-div{
+
+}
+
+.entry-div{
+
+}
+
+.page-div{
+    
+}

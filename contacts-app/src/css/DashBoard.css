@@ -1,24 +1,4 @@
-@font-face {
-    font-family: "Poppins-Regular";
-    src: url("../styles/Poppins-Regular.ttf");
-}
-
-@font-face {
-    font-family: "SF-pro-display-semibold";
-    src: url("../styles/FontsFree-Net-SFProDisplay-Semibold.ttf");
-}
-
-@font-face {
-    font-family: "SF-pro-display-bold";
-    src: url("../styles/SFPRODISPLAYBOLD.OTF");
-}
-
-@font-face {
-    font-family: "SF Pro Display";
-    src: url("../styles/SFPRODISPLAYREGULAR.OTF");
-}
-
-.dashboard-heading {
+.text-on-the-top {
     text-align: left;
     font: normal normal normal 12px/18px Poppins-Regular;
     letter-spacing: 0px;
@@ -34,26 +14,26 @@
     box-shadow: 0px 10px 20px #00000034;
     border-radius: 13px;
     opacity: 1;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    width: 345px;
-    height: 447px;
+    width: 27%;
+    margin-left: 25px;
+    padding-bottom: 11px;
 }
 
 .total-div {
     display: flex;
     flex-direction: row;
     height: 50%;
-    width: 60%;
-    justify-content: space-evenly;
+    width: 80%;
+    justify-content: flex-start;
     text-align: center;
 }
 
 .add-button {
-    width: 275px;
-    height: 50px;
+    width: 77%;
+    height: 11%;
     border: none;
     background-color: #82BA50;
-    border-radius: 8px;
+    border-radius: 7px;
     text-align: center;
     font: normal normal 600 14px/20px SF-pro-display-semibold;
     letter-spacing: 0.32px;
@@ -75,18 +55,18 @@
 }
 
 .user_img {
-    width: 136px;
-    height: 118px;
+    width: 60%;
+    height: 28%;
 }
 
 .group_img {
-    width: 211px;
-    height: 120px;
+    width: 80%;
+    height: 28%;
 }
 
 .system_img {
-    width: 151px;
-    height: 115px;
+    width: 60%;
+    height: 28%;
 }
 
 .line-inside-div {
@@ -96,5 +76,55 @@
     color: #1E2432;
     opacity: 1;
     padding: 0px 22px;
-    height: 11%;
+    height: 12%;
+}
+
+.Footer {
+    background: #35412C;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 13%;
+    left: 0px;
+}
+
+.header {
+    height: 7%;
+    width: 100%;
+    background: rgb(12, 12, 12);
+    top: 0px;
+    position: fixed;
+    left: 0px;
+    color: white;
+}
+
+.body {
+    height: 100%;
+    width: 100%;
+}
+
+.Nav {
+    height: 80%;
+    width: 15%;
+    background-color: #0c0c0c;
+    position: fixed;
+    left: 0px;
+    color: white;
+    top: 7%;
+}
+
+.content {
+    width: 84%;
+    height: 80%;
+    position: absolute;
+    right: 0;
+    top: 7%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 1500px) {
+    .dashboard-div {
+        width: 31%;
+    }
 }

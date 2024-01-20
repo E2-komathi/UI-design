@@ -1,12 +1,12 @@
-import addUser from "./assets/AddUser.svg";
-import addGroup from "./assets/AddGroup.svg";
-import system from "./assets/System.svg";
-import './css/DashBoard.css';
+import addUser from "../assets/AddUser.svg";
+import addGroup from "../assets/AddGroup.svg";
+import system from "../assets/System.svg";
+import '../css/DashBoard.css';
 
 function Dashboard() {
   return (
     <div className="dashboard-page">
-      <p className="dashboard-heading">Dashboard</p>
+      <p className="text-on-the-top">Dashboard</p>
       <div className="total-div">
         <div className="dashboard-div">
           <h3 className="title-Text">Add User</h3>

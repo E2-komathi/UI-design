@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Dashboard from './Dashboard';
+import Main from './Main';
 import reportWebVitals from './reportWebVitals';
+import SearchBox from './CommonComponents/SearchBox';
+import AddUser from './components/AddUser';
+import Pagination from './CommonComponents/Pagination';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Dashboard />
+    {/* <Main /> */}
+    {/* <SearchBox /> */}
+     {/* <AddUser />  */}
+     <Pagination />
   </React.StrictMode>
 );
 

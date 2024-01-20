@@ -1,0 +1,43 @@
+.Add-User-Inner-Div {
+    border: 1px solid black;
+    width: 99%;
+}
+
+.top-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.polygon {
+    width: 9px;
+    height: 10px;
+    padding-right: 2px;
+}
+
+.File_Upload_Icon{
+    width: 23px;
+    height: 31px;
+    margin-left: -35px;
+    margin-top: 4%;
+}
+
+.buttons {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 27%;
+}
+
+.batch-btn{
+    width: 50%;
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.sorting-div{
+    display: flex;
+    height: 30px;
+    width: 44%;
+    align-items: center;
+    justify-content: space-between;
+}
