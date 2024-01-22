@@ -36,8 +36,13 @@
 
 .sorting-div{
     display: flex;
-    height: 30px;
     width: 44%;
     align-items: center;
     justify-content: space-between;
+}
+
+.number-entries {
+    margin: initial;
+    color: #448CCB;
+    padding: 0px 3px;
 }

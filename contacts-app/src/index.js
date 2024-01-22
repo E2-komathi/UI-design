@@ -2,17 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
+import Table from './CommonComponents/Table';
 import SearchBox from './CommonComponents/SearchBox';
 import AddUser from './components/AddUser';
 import Pagination from './CommonComponents/Pagination';
+import DropDown from './CommonComponents/DropDown';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Main /> */}
+    <Main />
     {/* <SearchBox /> */}
-     {/* <AddUser />  */}
-     <Pagination />
+     {/* <Pagination />
+     <DropDown /> */}
+     {/* <Table /> */}
+      {/* <AddUser />  */}
   </React.StrictMode>
 );
 

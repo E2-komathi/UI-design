@@ -31,6 +31,7 @@
 .search-box-contents {
     border: 1px solid #959191;
     border-radius: 8px;
+    width: 35%;
 }
 
 .searchBox {
@@ -85,6 +86,9 @@
 .Open_Sans_text_Regular {
     font: normal normal normal 14px/20px OpenSans-Regular;
     letter-spacing: 0px;
+    color: #333333cc;
+    width: 25%;
+    display: flex;
 }
 
 .common-btn:hover {
