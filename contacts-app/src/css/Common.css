@@ -28,6 +28,11 @@
     src: url("../styles/OpenSans-Regular.ttf");
 }
 
+@font-face {
+    font-family: "SF Pro display medium";
+    src: url("../styles/SFPRODISPLAYMEDIUM.OTF");
+}
+
 .search-box-contents {
     border: 1px solid #959191;
     border-radius: 8px;
@@ -97,13 +102,66 @@
 }
 
 .pagination-total-div{
-
+    text-align: left;
+    font: normal normal normal 14px/20px OpenSans-Regular;
+    letter-spacing: 0.28px;
+    color: #7C7C7C;
+    opacity: 1;
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: -1%;
 }
 
 .entry-div{
-
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .page-div{
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+}
+
+.records{
+    width: 70px;
+    height: 27px;
+    padding: 1px;
+    border: 1px solid #c5c0c0;
+    border-radius: 4px;
+    font: normal normal normal 14px/20px OpenSans-Regular;
+    background: white;
+}
+
+.numbers {
+    border: 1px solid #7C7C7C;
+    font: normal normal normal 14px/20px OpenSans-Regular;
+    border-radius: 4px;
+}
+
+.inside-page-div{
+    width: 35%;
+    height: 50%;
+    display: flex;
+    border: 1px solid #a7a7a7;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.right-icon {
+    width: 8px;
+    height: 9px;
+    margin-right: 5px;
+}
+
+.left-icon {
+    width: 8px;
+    height: 9px;
+    transform: rotate(-180deg);
+    margin-left: 5px;
 }

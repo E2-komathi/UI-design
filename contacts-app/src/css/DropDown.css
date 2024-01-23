@@ -35,13 +35,11 @@
     background: #bbb9b977;
 }
 
-.drop-down-icon {
-    height: 15px;
-    width: 25px;
+.drop-down-icon , .drop-down-icon-inverse {
+    height: 20px;
+    width: 23px;
 }
 
 .drop-down-icon-inverse {
-    height: 15px;
-    width: 25px;
     transform: rotate(180deg);
 }

@@ -2,27 +2,9 @@ import { useState } from "react";
 import '../css/DropDown.css';
 import dropDown from '../assets/dropDown.png';
 
-export default function DropDown() {
+export default function DropDown({data}) {
     const [isActive, setIsActive] = useState(false);
     const [selected, setIsSelected] = useState("Unit #");
-    const items = [
-        {
-            id: '1',
-            name: 'Extension'
-        },
-        {
-            id: '2',
-            name: 'Extension'
-        },
-        {
-            id: '3',
-            name: "Extension"
-        },
-        {
-            id: '4',
-            name: "Extension"
-        }
-    ];
 
     function selectValue(e) {
         setIsSelected(e.target.textContent);
@@ -44,9 +26,9 @@ export default function DropDown() {
                 <div className="dropdown-content"
                     style={{ display: isActive ? "block" : "none" }}>
                     {
-                        items.map((item) => (
-                            <div onClick={selectValue} className="item" key={item.id} >
-                                {item.name}
+                        data.map((item) => (
+                            <div onClick={selectValue} className="item">
+                                {item}
                             </div>
                         ))
                     }

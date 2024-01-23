@@ -13,10 +13,10 @@ root.render(
   <React.StrictMode>
     <Main />
     {/* <SearchBox /> */}
-     {/* <Pagination />
-     <DropDown /> */}
+  {  /* <DropDown /> */}
      {/* <Table /> */}
-      {/* <AddUser />  */}
+    {/* <AddUser />   */}
+    {/* <Pagination /> */}
   </React.StrictMode>
 );
 

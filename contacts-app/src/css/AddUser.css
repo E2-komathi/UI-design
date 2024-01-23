@@ -1,5 +1,4 @@
 .Add-User-Inner-Div {
-    border: 1px solid black;
     width: 99%;
 }
 
@@ -45,4 +44,20 @@
     margin: initial;
     color: #448CCB;
     padding: 0px 3px;
+}
+
+.pagination-div{
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    padding-top: 11px;
+}
+
+.sorting-div-reset {
+    text-align: left;
+    letter-spacing: 1px;
+    color: #9d9d9da3;
+    opacity: 1;
+    font-family: 'SF Pro display medium';
+    font-size: small;
 }

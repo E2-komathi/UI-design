@@ -1,10 +1,12 @@
 import edit from '../assets/edit.png';
 import deleteIcon from '../assets/delete.png';
 import '../css/Table.css';
-import reset from '../assets/reset.png';
-import sort from '../assets/sort-default.png';
+import sortIconDefault from '../assets/sort-default.png';
+import sortIcon from '../assets/sort-up.png';
+import { useState } from 'react';
 
 export default function Table({ data }) {
+    const [sort, setSort] = useState(false); // default sorting ascending
     const tableValue =
         [{
             id: "01",
@@ -26,7 +28,116 @@ export default function Table({ data }) {
             fn: "djfhdjfh",
             ln: "jfhjsh",
             name: "jhdfjshjdh"
-        }];
+        },
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        },
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        },
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        },
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        },
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        },
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        },
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        },
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        },];
+
+    function changeSortVal(e, id) {
+        console.log(e.target.id);
+        setSort(!sort);
+    }
+
     return (
         <div className='table-div'>
             <table>
@@ -35,8 +146,9 @@ export default function Table({ data }) {
                         {
                             data.map((heading) => (
                                 <th>
-                                    <span>{heading}</span>
-                                    <img alt="reset" src={sort} className='reset'/>
+                                    <span key={heading.id}>{heading.value}</span>
+                                    {heading.sortable ?
+                                        <img alt="Sort Icon" src={sort ? sortIcon : sortIconDefault} className='sort-icon' id={heading.id} onClick={(e) => changeSortVal(e)} /> : ''}
                                 </th>
                             ))
                         }
