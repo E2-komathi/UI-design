@@ -2,21 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
-import Table from './CommonComponents/Table';
-import SearchBox from './CommonComponents/SearchBox';
-import AddUser from './components/AddUser';
-import Pagination from './CommonComponents/Pagination';
-import DropDown from './CommonComponents/DropDown';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AddUnitPopUp from './components/AddUnitPopUp';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Main />
-    {/* <SearchBox /> */}
-  {  /* <DropDown /> */}
-     {/* <Table /> */}
-    {/* <AddUser />   */}
-    {/* <Pagination /> */}
+    <Router>
+      <Main />
+    </Router>
+    {/* <AddUnitPopUp /> */}
   </React.StrictMode>
 );
 

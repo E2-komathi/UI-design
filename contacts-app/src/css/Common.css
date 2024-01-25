@@ -70,8 +70,22 @@
 }
 
 .common-btn {
-    width: 200px;
+    width: 45%;
     height: 50px;
+    background-color: #448CCB;
+    font: normal normal 600 14px/20px SF-pro-display-semibold;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+}
+
+.batch-import-btn {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    height: 50px;
+    padding: 0px 15px;
     background-color: #448CCB;
     font: normal normal 600 14px/20px SF-pro-display-semibold;
     letter-spacing: 0.32px;
@@ -101,16 +115,21 @@
     cursor: pointer;
 }
 
+.batch-import-btn:hover {
+    background-color: #304455;
+    cursor: pointer;
+}
+
 .pagination-total-div{
     text-align: left;
     font: normal normal normal 14px/20px OpenSans-Regular;
     letter-spacing: 0.28px;
     color: #7C7C7C;
-    opacity: 1;
     width: 25%;
     display: flex;
     justify-content: space-evenly;
     margin-right: -1%;
+    height: 45px;
 }
 
 .entry-div{

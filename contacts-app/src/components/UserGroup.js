@@ -6,16 +6,18 @@ import SearchBox from '../CommonComponents/SearchBox';
 import DropDown from '../CommonComponents/DropDown';
 import Table from '../CommonComponents/Table';
 import Pagination from '../CommonComponents/Pagination';
-import AddUnitPopUp from './AddUnitPopUp';
 
-function AddUser() {
+function UserGroup() {
     const tableHeading = [{
-        id: "Unit #",
-        value: "Unit #"
+        id: "id",
+        value: "ID"
     },
     {
-        id: "CATIE Extension",
-        value: "CATIE Extension"
+        id: "unit",
+        value: "Unit #"
+    }, {
+        id: "Role",
+        value: "Role"
     },
     {
         id: "First Name",
@@ -37,7 +39,7 @@ function AddUser() {
     }
     ];
 
-    const dropDownValues = ['Unit #', 'CATIE Extension', 'First Name', 'Last Name', 'Username'];
+    const dropDownValues = ['ID', 'Unit #', 'First Name', 'Last Name', 'Username'];
 
     return (
         <div className='User-Div'>
@@ -45,22 +47,24 @@ function AddUser() {
                 <div className='top-text'>
                     <p className="text-on-the-top">Dashboard</p>
                     <img alt='polygon' className="polygon" src={polygon} />
-                    <p className="text-on-the-top">Manage Units</p>
+                    <p className="text-on-the-top">Users and Groups</p>
+                    <img alt='polygon' className="polygon" src={polygon} />
+                    <p className="text-on-the-top">Users</p>
                 </div>
                 <span>
-                    <p className='Open_Sans_text_bold'>Manage Units</p>
+                    <p className='Open_Sans_text_bold'>Manage Users</p>
                 </span>
                 <div className='buttons'>
-                    <button className="common-btn">Add Single Unit</button>
+                    <button className="common-btn">Add Single User</button>
                     <div className='batch-import-btn'>
-                        <p className="batch-import-text" style={{ padding: "0px 10px" }}>Batch Import Units</p>
+                        <p className="batch-import-text" style={{ padding: "0px 10px" }}>Batch Import Users</p>
                         <img alt='File_Upload_Icon' className='File_Upload_Icon' src={fileUpload}></img>
                     </div>
                 </div>
                 <span>
-                    <p className='Open_Sans_text_bold'>Unit Selection Option</p>
+                    <p className='Open_Sans_text_bold'>User Selection Option</p>
                 </span>
-                <p className='Open_Sans_text_bold' style={{ height: "3px" }}>Unit Sort</p>
+                <p className='Open_Sans_text_bold' style={{ height: "3px" }}>User Sort</p>
                 <div className='sorting-div'>
                     <DropDown data={dropDownValues} />
                     <SearchBox />
@@ -78,5 +82,4 @@ function AddUser() {
         </div>
     )
 }
-
-export default AddUser;
+export default UserGroup;

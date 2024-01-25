@@ -114,13 +114,12 @@
 }
 
 .content {
-    width: 84%;
-    height: 78%;
+    width: 85%;
+    height: 80%;
     position: absolute;
     right: 0;
     top: 7%;
-    overflow: hidden;
-    overflow-y: scroll;
+    overflow: overlay;
 }
 
 @media screen and (max-width: 1500px) {

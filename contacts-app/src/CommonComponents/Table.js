@@ -28,69 +28,6 @@ export default function Table({ data }) {
             fn: "djfhdjfh",
             ln: "jfhjsh",
             name: "jhdfjshjdh"
-        },
-        {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        },
-        {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        },
-        {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        },
-        {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        },
-        {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        },
-        {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
         }, {
             id: "01",
             extension: "91829",
@@ -99,33 +36,6 @@ export default function Table({ data }) {
             name: "jhdfjshjdh"
         }, {
 
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        },
-        {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        },
-        {
             id: "01",
             extension: "91829",
             fn: "djfhdjfh",

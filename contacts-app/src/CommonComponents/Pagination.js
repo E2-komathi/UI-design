@@ -30,7 +30,7 @@ const Pagination = () => {
             <div className="page-div">
                 Page
                 <div className='inside-page-div'>
-                    <img alt='left-icon' className="left-icon" src={arrowIcon} onClick={pageNumber != 1 ?() => {decrement()} : null}></img>
+                    <img alt='left-icon' className="left-icon" src={arrowIcon} onClick={pageNumber !== 1 ?() => {decrement()} : null}></img>
                     {pageNumber}
                     <img alt='right-icon' className="right-icon" src={arrowIcon} onClick={pageNumber < maxPageNumber ? increment : null}></img>
                 </div>
