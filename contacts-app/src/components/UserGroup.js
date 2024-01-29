@@ -42,7 +42,6 @@ function UserGroup() {
     const dropDownValues = ['ID', 'Unit #', 'First Name', 'Last Name', 'Username'];
 
     return (
-        <div className='User-Div'>
             <div className='User-Inner-Div'>
                 <div className='top-text'>
                     <p className="text-on-the-top">Dashboard</p>
@@ -79,7 +78,6 @@ function UserGroup() {
                     <Table data={tableHeading} />
                 </div>
             </div>
-        </div>
     )
 }
 export default UserGroup;

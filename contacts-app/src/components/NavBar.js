@@ -6,7 +6,6 @@ function NavBar() {
             <NavLink to="/dashboard">DashBoard</NavLink>
             <NavLink to="/adduser">Add User</NavLink>
             <NavLink to="/userGroup">User Groups</NavLink>
-            <NavLink to="/addPopUp">Add POp up</NavLink>
         </div>
     )
 }

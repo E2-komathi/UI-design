@@ -19,7 +19,6 @@ function Main() {
                         <Route exact path="/dashboard" element={<Dashboard />} />
                         <Route exact path="/adduser" element={<AddUser />} />
                         <Route exact path="/userGroup" element={<UserGroup />} />
-                        <Route exact path="/addPopUp" element={<AddUnitPopUp />} />
                     </Routes>
             </div>
         </div>

@@ -14,7 +14,7 @@ function SearchBox() {
         <div className='search-box-contents'>
             <div className='searchBox'>
                 <img alt="search" src={search} className='search' />
-                <input className='input' value={searchValue} onChange={(e) => setSearchValue(e.target.value)} placeholder='Search'/>
+                <input className='input-search' value={searchValue} onChange={(e) => setSearchValue(e.target.value)} placeholder='Search'/>
                 <img alt="reset" src={reset} className='reset' onClick={handleClick}/>
             </div>
         </div>

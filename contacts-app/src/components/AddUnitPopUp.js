@@ -6,9 +6,10 @@ import tvDarkImg from '../assets/tvDark.png';
 import tvLiteImg from '../assets/tvLite.png';
 
 
-function AddUnitPopUp() {
+function AddUnitPopUp({func}) {
     const [uiType, setUiType] = useState('new');
     const [solution, setSolution] = useState('tablet');
+    const [tvType,setTvType] = useState('dark');
     const uiTypeClassName = (solution === 'tv') ? 'ui-type-tv' : '';
 
     const changeUIType = (value) => {
@@ -19,10 +20,14 @@ function AddUnitPopUp() {
         setSolution(value);
     }
 
+    function changeTvType(value) {
+        setTvType(value);
+    }
+
     return (
         <div className="pop-up">
             <div className="pop-up-content">
-                <div className='heading-div' style={{ "margin-left": "15px" }}>
+                <div className='heading-div' style={{ "margin-left": "15px" , "height": "50px"}}>
                     <p className='Open_Sans_text_bold'>Manage Units</p>
                 </div>
                 <div className='content-div'>
@@ -62,11 +67,11 @@ function AddUnitPopUp() {
                                 </div>
                                 <div className='tv-type'>
                                     <span className='dark-radio-btn'>
-                                        <input type='radio' className='radio-icon' />
+                                        <input type='radio' className='radio-icon' checked={tvType === 'dark'} onClick={() => changeTvType('dark')}/>
                                         <p className='radio-text'>Dark</p>
                                     </span>
                                     <span className='lite-radio-btn'>
-                                        <input type='radio' className='radio-icon' />
+                                        <input type='radio' className='radio-icon' checked={tvType === 'light'} onClick={() => changeTvType('light')}/>
                                         <p className='radio-text'>Light</p>
                                     </span>
                                 </div>
@@ -90,9 +95,9 @@ function AddUnitPopUp() {
                     </div>
                 </div>
 
-                <div>
-                    <button>Save</button>
-                    <button>Cancel</button>
+                <div className='save-cancel-btns'>
+                    <button className='cancel-btn' onClick={func}>Cancel</button>
+                    <button className="common-btn">Save</button>
                 </div>
             </div>
         </div>

@@ -7,6 +7,7 @@ import DropDown from '../CommonComponents/DropDown';
 import Table from '../CommonComponents/Table';
 import Pagination from '../CommonComponents/Pagination';
 import AddUnitPopUp from './AddUnitPopUp';
+import { useState } from 'react';
 
 function AddUser() {
     const tableHeading = [{
@@ -38,9 +39,13 @@ function AddUser() {
     ];
 
     const dropDownValues = ['Unit #', 'CATIE Extension', 'First Name', 'Last Name', 'Username'];
+    const [popUptoggle, setPopUpToggle] = useState(false);
+
+    function popUpFunction() {
+        setPopUpToggle(!popUptoggle);
+    }
 
     return (
-        <div className='User-Div'>
             <div className='User-Inner-Div'>
                 <div className='top-text'>
                     <p className="text-on-the-top">Dashboard</p>
@@ -51,7 +56,12 @@ function AddUser() {
                     <p className='Open_Sans_text_bold'>Manage Units</p>
                 </span>
                 <div className='buttons'>
-                    <button className="common-btn">Add Single Unit</button>
+                    <button className="common-btn" onClick={popUpFunction}>Add Single Unit</button>
+                    {popUptoggle &&
+                        <div className='add-unit-popUp'>
+                            <AddUnitPopUp func={popUpFunction}/>
+                        </div>
+                    }
                     <div className='batch-import-btn'>
                         <p className="batch-import-text" style={{ padding: "0px 10px" }}>Batch Import Units</p>
                         <img alt='File_Upload_Icon' className='File_Upload_Icon' src={fileUpload}></img>
@@ -75,7 +85,6 @@ function AddUser() {
                     <Table data={tableHeading} />
                 </div>
             </div>
-        </div>
     )
 }
 

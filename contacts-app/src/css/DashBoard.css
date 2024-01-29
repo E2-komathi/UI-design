@@ -120,6 +120,7 @@
     right: 0;
     top: 7%;
     overflow: overlay;
+    margin-left: 1%;
 }
 
 @media screen and (max-width: 1500px) {

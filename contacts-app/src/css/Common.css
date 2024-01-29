@@ -45,8 +45,8 @@
     margin: 4px 5px;
 }
 
-.input {
-    border: none;
+.input-search {
+    border: none ;
     width: 80%;
     margin: 0% 3%;
     outline: none;
@@ -111,12 +111,12 @@
 }
 
 .common-btn:hover {
-    background-color: #304455;
+    background-color: #224767;
     cursor: pointer;
 }
 
 .batch-import-btn:hover {
-    background-color: #304455;
+    background-color: #224767;
     cursor: pointer;
 }
 
