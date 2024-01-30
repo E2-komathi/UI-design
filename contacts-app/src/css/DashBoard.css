@@ -1,130 +1,147 @@
-.text-on-the-top {
+.navigation-text {
     text-align: left;
-    font: normal normal normal 12px/18px Poppins-Regular;
-    letter-spacing: 0px;
+    font: normal normal normal 12px/30px Poppins-Regular;
     color: #333333;
-    opacity: 1;
-    width: 96px;
-    height: 17px;
-    top: 78px;
-    left: 415px;
 }
 
-.dashboard-div {
+.dashboard-content{
+    margin-left: 1%;
+    height: 100%;
+    overflow: auto;
+}
+
+.dashboard-card-1 , .dashboard-card-2 ,.dashboard-card-3 {
     box-shadow: 0px 10px 20px #00000034;
     border-radius: 13px;
-    opacity: 1;
-    width: 27%;
-    margin-left: 25px;
-    padding-bottom: 11px;
+    width: 22%;
+    margin-left: 2%;
 }
 
-.total-div {
+.dashboard-cards {
     display: flex;
-    flex-direction: row;
-    height: 50%;
-    width: 80%;
-    justify-content: flex-start;
     text-align: center;
+    height: 60%;
 }
 
-.add-button {
+.dashboard-title-div{
+    height: 20%;
+}
+
+.dashboard-image-div{
+    height: 35%;
+}
+
+.dashboard-details-div{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 29px;
+}
+
+.dashboard-button-div{
+    height: 20%;
+}
+
+.dashboard-btn {
     width: 77%;
-    height: 11%;
+    height: 50%;
     border: none;
     background-color: #82BA50;
     border-radius: 7px;
-    text-align: center;
     font: normal normal 600 14px/20px SF-pro-display-semibold;
     letter-spacing: 0.32px;
     color: #FFFFFF;
-    opacity: 1;
+    margin-top: 15px;
 }
 
-.add-button:hover {
+.dashboard-btn:hover {
     background-color: #35412C;
     cursor: pointer;
 }
 
-.title-Text {
-    text-align: center;
-    font: normal normal bold 34px/20px SF-pro-display-bold;
+.title-text {
+    font: normal normal bold 34px/108px SF-pro-display-bold;
     letter-spacing: 0.32px;
     color: #1E2432;
-    opacity: 1;
 }
 
-.user_img {
-    width: 60%;
-    height: 28%;
-}
-
-.group_img {
-    width: 80%;
-    height: 28%;
-}
-
-.system_img {
-    width: 60%;
-    height: 28%;
-}
-
-.line-inside-div {
+.div-details {
     text-align: left;
     font: normal normal normal 15px/18px SF Pro Display;
     letter-spacing: 0.32px;
     color: #1E2432;
-    opacity: 1;
-    padding: 0px 22px;
-    height: 12%;
+    height: 45%;
 }
 
-.Footer {
-    background: #35412C;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 13%;
-    left: 0px;
-}
-
-.header {
-    height: 7%;
-    width: 100%;
-    background: rgb(12, 12, 12);
-    top: 0px;
-    position: fixed;
-    left: 0px;
-    color: white;
-}
-
-.body {
-    height: 100%;
-    width: 100%;
-}
-
-.Nav {
+.user_img {
     height: 80%;
-    width: 15%;
-    background-color: #0c0c0c;
-    position: fixed;
-    left: 0px;
-    color: white;
-    top: 7%;
 }
 
-.content {
-    width: 85%;
-    height: 80%;
-    position: absolute;
-    right: 0;
-    top: 7%;
-    overflow: overlay;
-    margin-left: 1%;
+.group_img {
+    height: 85%;
 }
 
-@media screen and (max-width: 1500px) {
-    .dashboard-div {
-        width: 31%;
+.system_img {
+   height: 70%;
+   padding-top: 20px;
+}
+
+@media (max-width: 1600px) {
+    .dashboard-card-1 , .dashboard-card-2 ,.dashboard-card-3 {
+        width: 25%;
+    }
+
+    .user_img {
+        height: 70%;
+        padding-top: 12px;
+    }
+    
+    .group_img {
+        height: 75%;
+        padding-top: 12px;
+    }
+    
+    .system_img {
+       height: 60%;
+       padding-top: 25px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .dashboard-cards {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-card-1 , .dashboard-card-2 ,.dashboard-card-3 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 900px) {
+    .dashboard-cards {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dashboard-card-1 , .dashboard-card-2 ,.dashboard-card-3 {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1950px) {
+    .dashboard-card-1 , .dashboard-card-2 ,.dashboard-card-3 {
+        width: 15%;
+    }
+}
+
+@media (min-height: 1100px) {
+
+    .dashboard-cards {
+        display: flex;
+        text-align: center;
+        height: 40%;
     }
 }

@@ -1,0 +1,36 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+.header-section{
+    height: 7%;
+    background: #000000;
+}
+
+.content-section {
+    height: 80%;
+    display: flex;
+}
+
+.footer-section{
+    background: #35412C;
+    height: 13%;
+}
+
+.side-nav{
+    width: 15%;
+    background-color: #000000;
+}
+
+.main-content{
+    width: 85%;
+    background-color: white;
+}   
