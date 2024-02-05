@@ -1,4 +1,4 @@
-import '../css/Common.css';
+import '../css/CommonFontAndStyles.css';
 import '../css/AddUser.css';
 import fileUpload from '../assets/file-upload.png';
 import polygon from '../assets/Polygon.png';
@@ -46,27 +46,29 @@ function AddUser() {
     }
 
     return (
-            <div className='User-Inner-Div'>
-                <div className='top-text'>
-                    <p className="text-on-the-top">Dashboard</p>
-                    <img alt='polygon' className="polygon" src={polygon} />
-                    <p className="text-on-the-top">Manage Units</p>
-                </div>
-                <span>
-                    <p className='Open_Sans_text_bold'>Manage Units</p>
-                </span>
-                <div className='buttons'>
-                    <button className="common-btn" onClick={popUpFunction}>Add Single Unit</button>
-                    {popUptoggle &&
+        <div className='add-user-container'>
+            <div className='navigation-text-container'>
+                <span id="navigation-text">Dashboard</span>
+                <img alt='polygon' className="polygon" src={polygon} />
+                <span id="navigation-text">Manage Units</span>
+            </div>
+            <div className='service-name-container'>
+                <span id='service-name'>Manage Units</span>
+            </div>
+
+            <div className='common-btn-container'>
+                <button className="common-btn" onClick={popUpFunction}>Add Single Unit</button>
+                {/* {popUptoggle &&
                         <div className='add-unit-popUp'>
                             <AddUnitPopUp func={popUpFunction}/>
                         </div>
-                    }
-                    <div className='batch-import-btn'>
-                        <p className="batch-import-text" style={{ padding: "0px 10px" }}>Batch Import Units</p>
-                        <img alt='File_Upload_Icon' className='File_Upload_Icon' src={fileUpload}></img>
-                    </div>
-                </div>
+                    } */}
+                <button className="common-btn-import">
+                    Batch Import Units
+                    <img alt='File_Upload_Icon' className='file-icon' src={fileUpload}></img>
+                </button>
+            </div>
+            {/*
                 <span>
                     <p className='Open_Sans_text_bold'>Unit Selection Option</p>
                 </span>
@@ -83,8 +85,8 @@ function AddUser() {
                 </div>
                 <div className='Table-Div'>
                     <Table data={tableHeading} />
-                </div>
-            </div>
+                </div> */}
+        </div>
     )
 }
 

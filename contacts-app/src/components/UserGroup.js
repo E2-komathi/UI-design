@@ -1,4 +1,4 @@
-import '../css/Common.css';
+import '../css/CommonFontAndStyles.css';
 import '../css/AddUser.css';
 import fileUpload from '../assets/file-upload.png';
 import polygon from '../assets/Polygon.png';

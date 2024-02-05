@@ -33,6 +33,70 @@
     src: url("../styles/SFPRODISPLAYMEDIUM.OTF");
 }
 
+#navigation-text {
+    text-align: left;
+    font: normal normal normal 12px/30px Poppins-Regular;
+    color: #333333;
+    padding-right: 5px;
+}
+
+#navigation-text:hover {
+    cursor: pointer;
+}
+
+.navigation-text-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.polygon {
+    height: 10px;
+    padding-right: 3px;
+}
+
+.service-name-container {
+    height: 4%;
+    padding: 20px 0px;
+}
+
+#service-name{
+    font: normal normal bold 14px/20px OpenSans;
+    color: #333333;
+}
+
+.common-btn {
+    width: 12%;
+    height: 50px;
+    background-color: #448CCB;
+    font: normal normal 600 14px/14px SF-pro-display-semibold;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+.common-btn-import {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12%;
+    height: 50px;
+    background-color: #448CCB;
+    font: normal normal 600 14px/14px SF-pro-display-semibold;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+.common-btn:hover , .common-btn-import:hover {
+    background-color: #224767;
+    cursor: pointer;
+}
+
 .search-box-contents {
     border: 1px solid #959191;
     border-radius: 8px;
@@ -69,38 +133,7 @@
     cursor: pointer;
 }
 
-.common-btn {
-    width: 45%;
-    height: 50px;
-    background-color: #448CCB;
-    font: normal normal 600 14px/20px SF-pro-display-semibold;
-    letter-spacing: 0.32px;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 6px;
-}
 
-.batch-import-btn {
-    display: flex;
-    align-items: center;
-    width: max-content;
-    height: 50px;
-    padding: 0px 15px;
-    background-color: #448CCB;
-    font: normal normal 600 14px/20px SF-pro-display-semibold;
-    letter-spacing: 0.32px;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 6px;
-}
-
-
-.Open_Sans_text_bold {
-    text-align: left;
-    font: normal normal bold 14px/20px OpenSans;
-    letter-spacing: 0px;
-    color: #333333;
-}
 
 .Open_Sans_text_Regular {
     font: normal normal normal 14px/20px OpenSans-Regular;
@@ -110,15 +143,6 @@
     display: flex;
 }
 
-.common-btn:hover {
-    background-color: #224767;
-    cursor: pointer;
-}
-
-.batch-import-btn:hover {
-    background-color: #224767;
-    cursor: pointer;
-}
 
 .pagination-total-div{
     text-align: left;

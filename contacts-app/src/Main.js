@@ -17,8 +17,8 @@ function Main() {
                 <div className='main-content'>
                     <Routes>
                         <Route exact path="/dashboard" element={<Dashboard />} />
-                        {/* <Route exact path="/adduser" element={<AddUser />} />
-                        <Route exact path="/userGroup" element={<UserGroup />} /> */}
+                        <Route exact path="/adduser" element={<AddUser />} />
+                        <Route exact path="/userGroup" element={<UserGroup />} />
                     </Routes>
                 </div>
             </div>

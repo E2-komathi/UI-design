@@ -6,7 +6,7 @@ import '../css/DashBoard.css';
 function Dashboard() {
   return (
     <div className="dashboard-content" >
-      <span className="navigation-text">Dashboard</span>
+      <span id="navigation-text">Dashboard</span>
 
       <div className="dashboard-cards">
 

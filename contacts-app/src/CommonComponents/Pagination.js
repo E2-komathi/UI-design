@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../css/Common.css';
+import '../css/CommonFontAndStyles.css';
 import arrowIcon from '../assets/arrow.png';
 
 const Pagination = () => {

@@ -1,6 +1,6 @@
 import search from '../assets/search.png';
 import reset from '../assets/reset.png';
-import '../css/Common.css';
+import '../css/CommonFontAndStyles.css';
 import { useState } from 'react';
 function SearchBox() {
 

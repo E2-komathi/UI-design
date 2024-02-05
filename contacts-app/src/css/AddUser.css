@@ -1,29 +1,18 @@
-.User-Inner-Div {
-    width: 99%;
+.add-user-container {
+    width: 100%;
     margin-left: 1%;
-} 
+    height: 100%;
+}
 
-.top-text {
+
+.file-icon{
+    width: 25px;
+    padding-left: 10px;
+}
+
+.common-btn-container {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: max-content;
-}
-
-.polygon {
-    height: 10px;
-    padding: 0px 6px;
-}
-
-.File_Upload_Icon{
-    width: 23px;
-}
-
-.buttons {
-    width: 27%;
-    display: flex;
-    justify-content: space-between;
 }
 
 .sorting-div{
