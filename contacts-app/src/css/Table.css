@@ -17,14 +17,14 @@ th {
 }
 
 th {
-    font: normal normal bold 14px/20px OpenSans;
+    font: normal normal bold 14px/40px OpenSans;
     letter-spacing: 0px;
     color: #666666;
     opacity: 1;
 }
 
 td {
-    font: normal normal normal 13px/20px OpenSans-Regular;
+    font: normal normal normal 13px/40px OpenSans-Regular;
     letter-spacing: 0.26px;
     color: #555555;
     opacity: 1;
@@ -33,12 +33,11 @@ td {
 tbody,
 thead {
     width: 100%;
-    border-bottom: 2px solid #ddd4d4;
 }
 
 tr {
-    border-bottom: 2px solid #ddd4d4;
-    height: 40px;
+    border-bottom: 2px solid #efededdb;;
+    height: 50px;
 }
 
 .edit-Icon {

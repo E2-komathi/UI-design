@@ -1,34 +1,35 @@
 .drop-down-div{
-    width: 25%;
     border: 1px solid #959191;
     border-radius: 8px;
-    font: normal normal normal 16px/20px OpenSans-Regular;
+    font: normal normal normal 16px OpenSans-Regular;
     color: #524f4f;
-    max-height: 29px;
+    margin-right: 15px;
 }
 
 .dropdown-btn {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding-left: 10px;
     color: #524f4f;
-    height: max-content;
-    padding-bottom: 5px;
+    padding-top: 4px;
+}
+
+.drop-down-icon-container{
+    padding-right: 5px;
+    padding-top: 1px;
 }
 
 .dropdown-content {
-    width: 98%;
-    height: max-content;
-    padding-bottom: 5px;
-    background-color: white;
     position: relative;
-    border: 1px solid;
+    background-color: white;
+    margin-bottom: 5px;
 }
 
-.dropdown-content .item {
-    padding: 7px;
+.dropdown-content .item {   
+    padding: 6px;
     cursor: pointer;
+    padding: 2px 0px 5px 10px;
 }
 
 .dropdown-content .item:hover {

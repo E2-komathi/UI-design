@@ -58,34 +58,44 @@ function AddUser() {
 
             <div className='common-btn-container'>
                 <button className="common-btn" onClick={popUpFunction}>Add Single Unit</button>
-                {/* {popUptoggle &&
-                        <div className='add-unit-popUp'>
-                            <AddUnitPopUp func={popUpFunction}/>
-                        </div>
-                    } */}
                 <button className="common-btn-import">
                     Batch Import Units
                     <img alt='File_Upload_Icon' className='file-icon' src={fileUpload}></img>
                 </button>
             </div>
-            {/*
-                <span>
-                    <p className='Open_Sans_text_bold'>Unit Selection Option</p>
-                </span>
-                <p className='Open_Sans_text_bold' style={{ height: "3px" }}>Unit Sort</p>
-                <div className='sorting-div'>
+            <div className='text-container'>
+                <span id='unit-text'>Unit Selection Option</span>
+                <span id='service-name'>Unit Sort</span>
+            </div>
+
+            <div className='sorting-div'>
+                <div className='dropDown-container'>
                     <DropDown data={dropDownValues} />
-                    <SearchBox />
-                    <p className="sorting-div-reset">Reset</p>
-                    <p className='Open_Sans_text_Regular'>Showing <p className='number-entries'>8</p> Results</p>
                 </div>
-                <div className='pagination-div'>
-                    <p className='Open_Sans_text_bold'>User Details - All</p>
+                <div className='search-container'>
+                    <SearchBox />
+                </div>
+                <span className="sorting-div-reset">Reset</span>
+                <span className='Open_Sans_text_Regular'>Showing <span className='number-entries'>8</span> Results</span>
+            </div>
+            <div className='table-container'>
+                <div className='pagination-container'>
+                    <span id='service-name'>User Details - All</span>
                     <Pagination />
                 </div>
                 <div className='Table-Div'>
                     <Table data={tableHeading} />
-                </div> */}
+                </div>
+                <div className='bottom-pagination-container'>
+                    <Pagination />
+                </div>
+            </div>
+
+            {popUptoggle &&
+                <div className='add-unit-popUp'>
+                    <AddUnitPopUp func={popUpFunction} />
+                </div>
+            }
         </div>
     )
 }

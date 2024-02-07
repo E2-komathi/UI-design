@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 .polygon {
@@ -56,17 +57,21 @@
 }
 
 .service-name-container {
-    height: 4%;
-    padding: 20px 0px;
+    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
-#service-name{
+#service-name , #unit-text {
     font: normal normal bold 14px/20px OpenSans;
     color: #333333;
 }
 
+#unit-text {
+    padding-bottom: 15px;
+}
+
 .common-btn {
-    width: 12%;
+    width: 200px;
     height: 50px;
     background-color: #448CCB;
     font: normal normal 600 14px/14px SF-pro-display-semibold;
@@ -81,7 +86,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 12%;
+    width: 200px;
     height: 50px;
     background-color: #448CCB;
     font: normal normal 600 14px/14px SF-pro-display-semibold;
@@ -89,7 +94,6 @@
     color: #FFFFFF;
     border: none;
     border-radius: 6px;
-    margin-right: 15px;
 }
 
 .common-btn:hover , .common-btn-import:hover {
@@ -100,13 +104,12 @@
 .search-box-contents {
     border: 1px solid #959191;
     border-radius: 8px;
-    width: 35%;
+    margin-right: 15px;
 }
 
 .searchBox {
     display: flex;
-    flex-direction: row;
-    margin: 4px 5px;
+    margin: 3px 5px;
 }
 
 .input-search {
@@ -133,41 +136,38 @@
     cursor: pointer;
 }
 
-
-
 .Open_Sans_text_Regular {
     font: normal normal normal 14px/20px OpenSans-Regular;
     letter-spacing: 0px;
     color: #333333cc;
-    width: 25%;
     display: flex;
+    padding-top: 4px;
 }
 
 
 .pagination-total-div{
-    text-align: left;
     font: normal normal normal 14px/20px OpenSans-Regular;
     letter-spacing: 0.28px;
     color: #7C7C7C;
+    height: 45px;
     width: 25%;
     display: flex;
-    justify-content: space-evenly;
-    margin-right: -1%;
-    height: 45px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .entry-div{
     width: 45%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .page-div{
+    width: 45%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 45%;
 }
 
 .records{
@@ -178,6 +178,7 @@
     border-radius: 4px;
     font: normal normal normal 14px/20px OpenSans-Regular;
     background: white;
+    outline: none;
 }
 
 .numbers {
@@ -187,13 +188,13 @@
 }
 
 .inside-page-div{
-    width: 35%;
-    height: 50%;
     display: flex;
     border: 1px solid #a7a7a7;
     justify-content: space-between;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 5px;
+    width: 70px;
+    height: 27px;
 }
 
 .right-icon {
@@ -207,4 +208,14 @@
     height: 9px;
     transform: rotate(-180deg);
     margin-left: 5px;
+}
+
+.right-icon:hover , .left-icon:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width : 1600px) {
+    .pagination-total-div {
+        width: 35%;
+    }
 }

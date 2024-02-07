@@ -1,9 +1,14 @@
 .add-user-container {
-    width: 100%;
+    width: 99%;
     margin-left: 1%;
     height: 100%;
 }
 
+.text-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
 
 .file-icon{
     width: 25px;
@@ -13,13 +18,19 @@
 .common-btn-container {
     width: 100%;
     display: flex;
+    padding-bottom: 30px;
 }
 
 .sorting-div{
     display: flex;
-    width: 44%;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    height: 5%;
+}
+
+.table-container{
+    width: 95%;
+    margin-left: 1%;
+    margin-top: 5px;
 }
 
 .number-entries {
@@ -27,12 +38,17 @@
     color: #448CCB;
     padding: 0px 3px;
 }
-
-.pagination-div{
+.pagination-container{
     display: flex;
-    width: 98%;
     justify-content: space-between;
-    padding-top: 11px;
+    align-items: center;
+}
+
+.bottom-pagination-container{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: end;
 }
 
 .sorting-div-reset {
@@ -42,16 +58,32 @@
     opacity: 1;
     font-family: 'SF Pro display medium';
     font-size: small;
-}
-
-.text-on-the-top {
-    width: max-content;
+    padding-top: 5px;
+    padding-right: 7%;
 }
 
 .add-unit-popUp {
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 80%;
     right: 0px;
-    top: 0%;
+    top: 7%;
     position: absolute;
+}
+
+.dropDown-container {
+    width: 12%;
+}
+
+.search-container {
+    width: 18%;
+    padding-right: 25px;
+}
+
+@media screen and (max-width : 1700px) {
+    .dropDown-container{
+        width: 15%;
+    }
+    .search-container {
+        width: 20%;
+    }
 }

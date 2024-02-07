@@ -41,7 +41,33 @@ export default function Table({ data }) {
             fn: "djfhdjfh",
             ln: "jfhjsh",
             name: "jhdfjshjdh"
-        },];
+        }, {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }, {
+
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }];
 
     function changeSortVal(e, id) {
         console.log(e.target.id);

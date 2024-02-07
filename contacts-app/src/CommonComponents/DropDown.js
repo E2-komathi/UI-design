@@ -32,7 +32,7 @@ export default function DropDown({data}) {
                 }} className="dropdown-btn">
                     {selected}
 
-                    <span>
+                    <span className="drop-down-icon-container">
                         {isActive ?
                             <img src={dropDown} className="drop-down-icon-inverse" /> : <img src={dropDown} className="drop-down-icon" />}
                     </span>
