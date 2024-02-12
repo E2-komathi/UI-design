@@ -35,7 +35,7 @@ function Dashboard() {
           </div>
           <div className="dashboard-details-div">
             <span className="div-details">Quick access to Groups on your CATIE Mobile Application.</span>
-            <span className="div-details">You can also select Users and Groups from the navigationto the left to manage Groups.</span>
+            <span className="div-details">You can also select Users and Groups from the navigation to the left to manage Groups.</span>
           </div>
           <div className="dashboard-button-div">
             <button className="dashboard-btn">Add Group</button>

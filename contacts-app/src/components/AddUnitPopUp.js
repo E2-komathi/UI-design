@@ -5,13 +5,15 @@ import tvImg from '../assets/Tv.png';
 import tvDarkImg from '../assets/tvDark.png';
 import tvLiteImg from '../assets/tvLite.png';
 import '../css/CommonFontAndStyles.css';
-
+import pwdShow from '../assets/passwordShow.png';
+import pwdHide from '../assets/passwordHide.png';
 
 function AddUnitPopUp({ func }) {
     const [uiType, setUiType] = useState('new');
     const [solution, setSolution] = useState('tablet');
     const [tvType, setTvType] = useState('dark');
     const uiTypeClassName = (solution === 'tv') ? 'ui-type-tv' : '';
+    const [inputType, setInputType] = useState('password');
 
     const changeUIType = (value) => {
         setUiType(value);
@@ -23,6 +25,15 @@ function AddUnitPopUp({ func }) {
 
     function changeTvType(value) {
         setTvType(value);
+    }
+
+    function changeType() {
+        if(inputType === 'password') {
+            setInputType('text')
+        }
+        else {
+            setInputType('password')
+        }
     }
 
     return (
@@ -89,7 +100,13 @@ function AddUnitPopUp({ func }) {
                         </div>
                         <div>
                             <label className='lable-text'>Extension Password</label>
-                            <input></input>
+                            <div className='password-container'>
+                                <input type={inputType} className='password-input'/>
+                                {
+                                    (inputType === 'password') ?
+                                        <img alt='password-Hide' src={pwdHide} className='password-icon-hide' onClick={changeType} /> : <img alt='password-Show' src={pwdShow} className='password-icon-show' onClick={changeType} />
+                                }
+                            </div>
                         </div>
                         <div>
                             <label className='lable-text'>Username</label>

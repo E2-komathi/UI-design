@@ -42,42 +42,55 @@ function UserGroup() {
     const dropDownValues = ['ID', 'Unit #', 'First Name', 'Last Name', 'Username'];
 
     return (
-            <div className='User-Inner-Div'>
-                <div className='top-text'>
-                    <p className="text-on-the-top">Dashboard</p>
-                    <img alt='polygon' className="polygon" src={polygon} />
-                    <p className="text-on-the-top">Users and Groups</p>
-                    <img alt='polygon' className="polygon" src={polygon} />
-                    <p className="text-on-the-top">Users</p>
-                </div>
-                <span>
-                    <p className='Open_Sans_text_bold'>Manage Users</p>
-                </span>
-                <div className='buttons'>
-                    <button className="common-btn">Add Single User</button>
-                    <div className='batch-import-btn'>
-                        <p className="batch-import-text" style={{ padding: "0px 10px" }}>Batch Import Users</p>
-                        <img alt='File_Upload_Icon' className='File_Upload_Icon' src={fileUpload}></img>
-                    </div>
-                </div>
-                <span>
-                    <p className='Open_Sans_text_bold'>User Selection Option</p>
-                </span>
-                <p className='Open_Sans_text_bold' style={{ height: "3px" }}>User Sort</p>
-                <div className='sorting-div'>
+        <div className='add-user-group-container'>
+            <div className='navigation-text-container'>
+                <span id="navigation-text">Dashboard</span>
+                <img alt='polygon' className="polygon" src={polygon} />
+                <span id="navigation-text">Users and Groups</span>
+                <img alt='polygon' className="polygon" src={polygon} />
+                <span id="navigation-text">Users</span>
+            </div>
+            <div className='service-name-container'>
+                <span id='service-name'>Manage Users</span>
+            </div>
+
+            <div className='common-btn-container'>
+                <button className="common-btn">Add Single User</button>
+                <button className="common-btn-import">
+                    Batch Import Users
+                    <img alt='File_Upload_Icon' className='file-icon' src={fileUpload}></img>
+                </button>
+            </div>
+
+             <div className='text-container'>
+                <span id='unit-text'>Unit Selection Option</span>
+                <span id='service-name'>Unit Sort</span>
+            </div>
+
+            <div className='sorting-div'>
+                <div className='dropDown-container'>
                     <DropDown data={dropDownValues} />
-                    <SearchBox />
-                    <p className="sorting-div-reset">Reset</p>
-                    <p className='Open_Sans_text_Regular'>Showing <p className='number-entries'>8</p> Results</p>
                 </div>
-                <div className='pagination-div'>
-                    <p className='Open_Sans_text_bold'>User Details - All</p>
+                <div className='search-container'>
+                    <SearchBox />
+                </div>
+                <span className="sorting-div-reset">Reset</span>
+                <span className='Open_Sans_text_Regular'>Showing <span className='number-entries'>8</span> Results</span>
+            </div> 
+
+            <div className='table-container'>
+                <div className='pagination-container'>
+                    <span id='service-name'>User Details - All</span>
                     <Pagination />
                 </div>
                 <div className='Table-Div'>
                     <Table data={tableHeading} />
                 </div>
+                <div className='bottom-pagination-container'>
+                    <Pagination />
+                </div>
             </div>
+        </div>
     )
 }
 export default UserGroup;

@@ -46,7 +46,7 @@ function AddUser() {
     }
 
     return (
-        <div className='add-user-container'>
+        <div className='add-user-group-container'>
             <div className='navigation-text-container'>
                 <span id="navigation-text">Dashboard</span>
                 <img alt='polygon' className="polygon" src={polygon} />
