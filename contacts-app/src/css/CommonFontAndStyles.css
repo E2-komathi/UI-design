@@ -1,3 +1,4 @@
+/*general font family used */
 @font-face {
     font-family: "Poppins-Regular";
     src: url("../styles/Poppins-Regular.ttf");
@@ -33,6 +34,7 @@
     src: url("../styles/SFPRODISPLAYMEDIUM.OTF");
 }
 
+/*Text in the top of each page */
 #navigation-text {
     text-align: left;
     font: normal normal normal 12px/30px Poppins-Regular;
@@ -70,8 +72,21 @@
     padding-bottom: 15px;
 }
 
+/*Common buttons css */
 .common-btn {
-    width: 200px;
+    width: 11%;
+    height: 50px;
+    background-color: #448CCB;
+    font: normal normal 600 14px/14px SF-pro-display-semibold;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+.pop-up-common-btn {
+    width: 23%;
     height: 50px;
     background-color: #448CCB;
     font: normal normal 600 14px/14px SF-pro-display-semibold;
@@ -86,7 +101,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 11%;
     height: 50px;
     background-color: #448CCB;
     font: normal normal 600 14px/14px SF-pro-display-semibold;
@@ -94,13 +109,15 @@
     color: #FFFFFF;
     border: none;
     border-radius: 6px;
+    margin-right: 15px;
 }
 
-.common-btn:hover , .common-btn-import:hover {
-    background-color: #224767;
+.common-btn:hover , .common-btn-import:hover , .pop-up-common-btn:hover{
+    background-color: #2f4766;
     cursor: pointer;
 }
 
+/*Search box css */
 .search-box-contents {
     border: 1px solid #959191;
     border-radius: 8px;
@@ -109,7 +126,7 @@
 
 .searchBox {
     display: flex;
-    margin: 3px 5px;
+    margin: 4px 5px;
 }
 
 .input-search {
@@ -144,7 +161,7 @@
     padding-top: 4px;
 }
 
-
+/*Pagination and number of records css */
 .pagination-total-div{
     font: normal normal normal 14px/20px OpenSans-Regular;
     letter-spacing: 0.28px;
@@ -214,8 +231,52 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width : 1600px) {
+/*Pop up common style */ 
+
+.common-popUp-container {
+    width: 85%;
+    height: 80%;
+    right: 0px;
+    top: 7%;
+    position: absolute;
+    background-color: #4d4d4d;
+}
+
+@media only screen and (min-width : 1500px) and (max-width:1850px) {
+    .common-btn , .common-btn-import{
+        width: 14%;
+    }
     .pagination-total-div {
-        width: 35%;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width : 1200px) and (max-width:1499px) {
+    .common-btn , .common-btn-import{
+        width: 17%;
+    }
+
+    .pagination-total-div {
+        width: 36%;
+    }
+}
+
+@media only screen and (min-width : 900px) and (max-width:1199px) {
+    .common-btn , .common-btn-import{
+        width: 22%;
+    }
+
+    .pagination-total-div {
+        width: 46%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .common-btn , .common-btn-import{
+        width: 26%;
+    }
+
+    .pagination-total-div {
+        width: 53%;
     }
 }

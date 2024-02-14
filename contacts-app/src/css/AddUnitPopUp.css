@@ -8,14 +8,6 @@
     height: 5%;
 }
 
-.pop-up {
-    width: 100%;
-    height: 100%;
-    background-color: #000000B2;
-    position: relative;
-    z-index: 1;
-}
-
 .solution-span {
     display: flex;
     align-items: center;
@@ -25,7 +17,7 @@
     display: none;
 }
 
-.pop-up-content {
+.pop-up-content-card {
     width: 60%;
     height: 89%;
     background-color: white;
@@ -44,18 +36,19 @@
 }
 
 .content-div>div {
-    height: 13%;
+    height: 8%;
     width: 90%;
     display: flex;
     align-items: center;
 }
 
 .content-div {
-    height: 50%;
+    height: 74%;
     width: 95%;
+    margin-top: 2%;
 }
 
-.pop-up input {
+.pop-up-content-card input {
     box-shadow: 0px 5px 8px #00000029;
     border: 2px solid #3333335e;
     border-radius: 4px;
@@ -153,8 +146,7 @@
 .save-cancel-btns {
     display: flex;
     justify-content: center;
-    height: 37%;
-    align-items: end;
+    height: 14%;
     width: 95%;
 }
 
@@ -175,7 +167,7 @@
     display: flex;
     justify-content: center;
     height: 100%;
-    align-items: end;
+    align-items: flex-end;
     width: 100%;
 }
 
@@ -185,7 +177,7 @@
 
 .content-container {
     margin-left: 25px;
-    margin-top: 25px;
+    margin-top: 15px;
     width: 100%;
     height: 100%;
 }
@@ -222,7 +214,7 @@
     width: 85% !important;
 }
 
-@media screen and (max-width:1700px) {
+@media screen and (min-width:1400px) and (max-width:1800px) {
 
     .content-div {
         height: 80%;
@@ -230,18 +222,48 @@
     }
 
     .content-div>div {
-        height: 8%;
         width: 100%;
     }
 
-    .pop-up-content {
-        width: 70%;
-        height: 94%;
+    .pop-up-content-card {
+        width: 66%;
         top: 4%;
+        height: 94%;
     }
 
     .save-cancel-btns {
-        height: 50px;
+        height: 9%;
+    } 
+
+}
+
+@media screen and (min-width:1100px) and (max-width:1399px) {
+    .pop-up-content-card {
+        width: 80%;
+        top: 5%;
+        height: 93%;
+    }
+    .lable-text {
+        width: 21%;
+    }
+    .content-div>div {
+        height:9%;
     }
 
+    .save-cancel-btns {
+        height: 15%;
+    } 
+}
+
+@media screen and (min-width:950px) and (max-width:1099px) {
+    .pop-up-content-card {
+        width: 95%;
+        top: 3%;
+        height: 95%;
+        margin-left: 2%;
+    }
+
+    .lable-text {
+        width: 22%;
+    }
 }

@@ -2,13 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import '../css/DropDown.css';
 import dropDown from '../assets/dropDown.png';
 
-export default function DropDown({data}) {
+export default function DropDown(props) {
     const [isActive, setIsActive] = useState(false);
-    const [selected, setIsSelected] = useState("Unit #");
     const ref = useRef()
 
     function selectValue(e) {
-        setIsSelected(e.target.textContent);
+        props.fieldValue(e.target.textContent);
         setIsActive(!isActive);
     }
 
@@ -30,7 +29,7 @@ export default function DropDown({data}) {
                 <div onClick={() => {
                     setIsActive(!isActive);
                 }} className="dropdown-btn">
-                    {selected}
+                    {props.initialValue}
 
                     <span className="drop-down-icon-container">
                         {isActive ?
@@ -40,7 +39,7 @@ export default function DropDown({data}) {
                 <div className="dropdown-content" ref={ref} 
                     style={{ display: isActive ? "block" : "none" }}>
                     {
-                        data.map((item) => (
+                        props.data.map((item) => (
                             <div onClick={selectValue} className="item">
                                 {item}
                             </div>

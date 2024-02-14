@@ -15,7 +15,7 @@ function Dashboard() {
             <span className="title-text">Add User</span>
           </div>
           <div className="dashboard-image-div">
-            <img alt="add-user-image" src={addUser} className="user_img" />
+            <img alt="add-user" src={addUser} className="user_img" />
           </div>
           <div className="dashboard-details-div">
             <span className="div-details">Quick access to Users on your CATIE Mobile Application.</span>
@@ -31,7 +31,7 @@ function Dashboard() {
             <span className="title-text">Add Group</span>
           </div>
           <div className="dashboard-image-div">
-            <img alt="add-group-image" src={addGroup} className="group_img" />
+            <img alt="add-group" src={addGroup} className="group_img" />
           </div>
           <div className="dashboard-details-div">
             <span className="div-details">Quick access to Groups on your CATIE Mobile Application.</span>
@@ -47,7 +47,7 @@ function Dashboard() {
             <span className="title-text">System</span>
           </div>
           <div className="dashboard-image-div">
-            <img alt="manage-system-image" src={system} className="system_img" />
+            <img alt="manage-system" src={system} className="system_img" />
           </div>
           <div className="dashboard-details-div">
             <span className="div-details">Quick access to System settings on your CATIE Mobile Application.</span>

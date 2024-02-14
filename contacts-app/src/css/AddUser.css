@@ -62,12 +62,8 @@
     padding-right: 7%;
 }
 
-.add-unit-popUp {
-    width: 85%;
-    height: 80%;
-    right: 0px;
-    top: 7%;
-    position: absolute;
+.sorting-div-reset:hover {
+    cursor: pointer;
 }
 
 .dropDown-container {
