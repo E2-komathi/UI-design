@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../css/AddUnitPopUp.css';
 import tabletImg from '../assets/tablet.png';
 import tvImg from '../assets/Tv.png';
@@ -8,12 +8,19 @@ import '../css/CommonFontAndStyles.css';
 import pwdShow from '../assets/passwordShow.png';
 import pwdHide from '../assets/passwordHide.png';
 
-function AddUnitPopUp({ func }) {
+function AddUnitPopUp(props) {
     const [uiType, setUiType] = useState('new');
     const [solution, setSolution] = useState('tablet');
     const [tvType, setTvType] = useState('dark');
     const uiTypeClassName = (solution === 'tv') ? 'ui-type-tv' : '';
     const [inputType, setInputType] = useState('password');
+    const [userDatas, setUserDatas] = useState({
+        id: "",
+        extension: "",
+        fn: "",
+        ln: "",
+        name: ""
+    })
 
     const changeUIType = (value) => {
         setUiType(value);
@@ -28,7 +35,7 @@ function AddUnitPopUp({ func }) {
     }
 
     function changeType() {
-        if(inputType === 'password') {
+        if (inputType === 'password') {
             setInputType('text')
         }
         else {
@@ -36,9 +43,14 @@ function AddUnitPopUp({ func }) {
         }
     }
 
+    useEffect(() => {
+        if (props.datas !== null)
+            setUserDatas(props.datas)
+        console.log(props.datas)
+    }, [])
+
     return (
-        <div className="pop-up">
-            <div className="pop-up-content">
+            <div className="pop-up-content-card">
                 <div className='content-container'>
                     <div className='heading-div'>
                         <span id='service-name'>Manage Units</span>
@@ -46,7 +58,7 @@ function AddUnitPopUp({ func }) {
                     <div className='content-div'>
                         <div className='room-number-div'>
                             <label className='lable-text'>Room Number</label>
-                            <input style={{ width: "60%", height: "25px" }}></input>
+                            <input style={{ width: "60%", height: "25px" }} value={userDatas.id}></input>
                         </div>
                         <div className='solution-type-div' style={{ "height": "max-content", "align-items": "baseline" }}>
                             <label className='lable-text'>Solution Type</label>
@@ -96,12 +108,12 @@ function AddUnitPopUp({ func }) {
                         </div>
                         <div>
                             <label className='lable-text'>CATIE Extension</label>
-                            <input></input>
+                            <input value={userDatas.extension} />
                         </div>
                         <div>
                             <label className='lable-text'>Extension Password</label>
                             <div className='password-container'>
-                                <input type={inputType} className='password-input'/>
+                                <input type={inputType} className='password-input' />
                                 {
                                     (inputType === 'password') ?
                                         <img alt='password-Hide' src={pwdHide} className='password-icon-hide' onClick={changeType} /> : <img alt='password-Show' src={pwdShow} className='password-icon-show' onClick={changeType} />
@@ -110,23 +122,22 @@ function AddUnitPopUp({ func }) {
                         </div>
                         <div>
                             <label className='lable-text'>Username</label>
-                            <input></input>
+                            <input value={userDatas.fn} />
                         </div>
                         <div>
                             <label className='lable-text'>Device Serial #</label>
-                            <input></input>
+                            <input value={userDatas.ln} />
                         </div>
                     </div>
 
                     <div className='save-cancel-btns'>
                         <div className='save-cancel-container'>
-                            <button className='cancel-btn' onClick={func}>Cancel</button>
-                            <button className="common-btn">Save</button>
+                            <button className='cancel-btn' onClick={props.func}>Cancel</button>
+                            <button className="pop-up-common-btn">Save</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 

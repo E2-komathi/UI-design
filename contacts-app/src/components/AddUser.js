@@ -7,39 +7,85 @@ import DropDown from '../CommonComponents/DropDown';
 import Table from '../CommonComponents/Table';
 import Pagination from '../CommonComponents/Pagination';
 import AddUnitPopUp from './AddUnitPopUp';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function AddUser() {
-    const tableHeading = [{
-        id: "Unit #",
-        value: "Unit #"
-    },
-    {
-        id: "CATIE Extension",
-        value: "CATIE Extension"
-    },
-    {
-        id: "First Name",
-        value: "First Name",
-        sortable: true
-    },
-    {
-        id: "Last Name",
-        value: "Last Name",
-        sortable: true
-    },
-    {
-        id: "Username",
-        value: "Username"
-    },
-    {
-        id: "MANAGE",
-        value: "MANAGE"
-    }
-    ];
 
     const dropDownValues = ['Unit #', 'CATIE Extension', 'First Name', 'Last Name', 'Username'];
     const [popUptoggle, setPopUpToggle] = useState(false);
+    const [searchValue, setSearchValue] = useState('');
+    const [dropDownValue, setDropDownValue] = useState('Unit #');
+
+    const tableHeading = [
+        {
+            id: "Unit #",
+            value: "Unit #",
+            width: { width: '6%' }
+        },
+        {
+            id: "CATIE Extension",
+            value: "CATIE Extension",
+            width: { width: '14%' }
+        },
+        {
+            id: "First Name",
+            value: "First Name",
+            sortable: true,
+            width: { width: '14%' }
+        },
+        {
+            id: "Last Name",
+            value: "Last Name",
+            sortable: true,
+            width: { width: '14%' }
+        },
+        {
+            id: "Username",
+            value: "Username",
+            width: { width: '14%' }
+        },
+        {
+            id: "MANAGE",
+            value: "MANAGE",
+            width: { width: '35%', 'text-align': 'end' }
+        }
+    ];
+
+    const tableValue = [
+        {
+            id: "01",
+            extension: "91829",
+            fn: "djfhdjfh",
+            ln: "jfhjsh",
+            name: "jhdfjshjdh"
+        }
+    ];
+
+    const eachFieldStyle = [
+        {
+            id: '10%',
+            extension: '23%',
+            fn: '23%',
+            ln: '23%',
+            name: '23%'
+        }];
+
+    function valuesForSearch(searchData) {
+        setSearchValue(searchData);
+    }
+
+    function valuesForDropDown(Data) {
+        setDropDownValue(Data);
+    }
+
+    function resetForSearch() {
+        setSearchValue('');
+    }
+
+    const reset = () => {
+        setSearchValue('');
+        setDropDownValue('Unit #');
+    }
 
     function popUpFunction() {
         setPopUpToggle(!popUptoggle);
@@ -70,12 +116,12 @@ function AddUser() {
 
             <div className='sorting-div'>
                 <div className='dropDown-container'>
-                    <DropDown data={dropDownValues} />
+                    <DropDown data={dropDownValues} fieldValue={valuesForDropDown} initialValue={dropDownValue} />
                 </div>
                 <div className='search-container'>
-                    <SearchBox />
+                    <SearchBox data={searchValue} fieldValue={valuesForSearch} clearField={resetForSearch} />
                 </div>
-                <span className="sorting-div-reset">Reset</span>
+                <span className="sorting-div-reset" onClick={reset}>Reset</span>
                 <span className='Open_Sans_text_Regular'>Showing <span className='number-entries'>8</span> Results</span>
             </div>
             <div className='table-container'>
@@ -83,17 +129,15 @@ function AddUser() {
                     <span id='service-name'>User Details - All</span>
                     <Pagination />
                 </div>
-                <div className='Table-Div'>
-                    <Table data={tableHeading} />
-                </div>
+                <Table data={tableHeading} tableValue={tableValue} styleValue={eachFieldStyle} />
                 <div className='bottom-pagination-container'>
                     <Pagination />
                 </div>
             </div>
 
             {popUptoggle &&
-                <div className='add-unit-popUp'>
-                    <AddUnitPopUp func={popUpFunction} />
+                <div className='common-popUp-container'>
+                    <AddUnitPopUp func={popUpFunction} datas='null' />
                 </div>
             }
         </div>

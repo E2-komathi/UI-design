@@ -1,43 +1,36 @@
-table {
+.total-table-div {
     width: 100%;
     border-collapse: collapse;
 }
 
-.table-div {
-    width: 98%;
-    margin-left: 1%;
-}
-
-td,
-th {
-    margin: 0%;
-    text-align: center;
-    max-width: 100px;
-    word-wrap: break-word;
-}
-
-th {
+.table-head-div {
     font: normal normal bold 14px/40px OpenSans;
     letter-spacing: 0px;
     color: #666666;
     opacity: 1;
+    text-align: left;
 }
 
-td {
+.table-entries-set{
+    width: 100%;
+    border-bottom: 2px solid #efededdb;
+}
+
+.table-data-container{
+    display: flex;
+    height: 40px;
+    align-items: center;
     font: normal normal normal 13px/40px OpenSans-Regular;
     letter-spacing: 0.26px;
     color: #555555;
     opacity: 1;
 }
 
-tbody,
-thead {
-    width: 100%;
-}
-
-tr {
-    border-bottom: 2px solid #efededdb;;
+.table-head-container {
+    border-bottom: 2px solid #efededdb;
     height: 50px;
+    display: flex;
+    align-items: end;
 }
 
 .edit-Icon {
@@ -52,9 +45,15 @@ tr {
     margin-top: 9px;
 }
 
+.edit-Icon:hover , .delete-Icon:hover {
+    cursor: pointer;
+}
+
 .edit-delete-div {
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    width: 35%;
+    padding-right: 46px;
 }
 
 .sort-icon {

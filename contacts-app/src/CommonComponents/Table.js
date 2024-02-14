@@ -4,112 +4,64 @@ import '../css/Table.css';
 import sortIconDefault from '../assets/sort-default.png';
 import sortIcon from '../assets/sort-up.png';
 import { useState } from 'react';
+import AddUnitPopUp from '../components/AddUnitPopUp';
+import TableData from './TableData';
 
-export default function Table({ data }) {
+export default function Table({data , tableValue , styleValue}) {
     const [sort, setSort] = useState(false); // default sorting ascending
-    const tableValue =
-        [{
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
+    const [isEditTrue, setIsEditTrue] = useState(false);
+    const [editDatas, setEditDatas] = useState({
+        id: "",
+        extension: "",
+        fn: "",
+        ln: "",
+        name: ""
+    })
 
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        },
-        {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }, {
-
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
-        }];
-
-    function changeSortVal(e, id) {
-        console.log(e.target.id);
+    function changeSortVal(e) {
         setSort(!sort);
     }
 
+    function popUpFunction() {
+        setIsEditTrue(!isEditTrue);
+    }
+
+    function valuesOfData(dataValue) {
+        setEditDatas(dataValue);
+    }   
+    
     return (
-        <div className='table-div'>
-            <table>
-                <thead>
-                    <tr>
+        <div>
+            <div className='total-table-div'>
+                <div className='table-head-container'>
                         {
                             data.map((heading) => (
-                                <th>
+                                <div className='table-head-div' style={heading.width}>
                                     <span key={heading.id}>{heading.value}</span>
                                     {heading.sortable ?
                                         <img alt="Sort Icon" src={sort ? sortIcon : sortIconDefault} className='sort-icon' id={heading.id} onClick={(e) => changeSortVal(e)} /> : ''}
-                                </th>
+                                </div>
                             ))
                         }
-
-                    </tr>
-                </thead>
-                <tbody>{
+                </div>
+                <div className='table-entries-set'>{
                     tableValue.map((data) => (
-                        <tr>
-                            <td key={data.id}>{data.id}</td>
-                            <td>{data.extension}</td>
-                            <td>{data.fn}</td>
-                            <td>{data.ln}</td>
-                            <td>{data.name}</td>
-                            {data.image ? <td>{data.image}</td> : ''}
+                        <div className='table-data-container'>                            
+                            <TableData key={data.id} content={data} stylesDiv={styleValue}/>
                             <div className='edit-delete-div'>
-                                <img src={edit} className='edit-Icon' />
+                                <img src={edit} className='edit-Icon' onClick={() => { popUpFunction(); valuesOfData(data); }} />
                                 <img src={deleteIcon} className='delete-Icon'></img>
                             </div>
-                        </tr>
+                        </div>
                     ))
                 }
-
-                </tbody>
-            </table>
+                </div>
+            </div>
+            {isEditTrue &&
+                <div className='common-popUp-container'>
+                    <AddUnitPopUp func={popUpFunction} datas={editDatas} />
+                </div>
+            }
         </div>
     )
 }
