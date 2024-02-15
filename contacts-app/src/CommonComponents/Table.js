@@ -7,16 +7,10 @@ import { useState } from 'react';
 import AddUnitPopUp from '../components/AddUnitPopUp';
 import TableData from './TableData';
 
-export default function Table({data , tableValue , styleValue}) {
+export default function Table({ tableHeading, tableData, tableDataWidth, isEditable, isDeletable }) {
     const [sort, setSort] = useState(false); // default sorting ascending
     const [isEditTrue, setIsEditTrue] = useState(false);
-    const [editDatas, setEditDatas] = useState({
-        id: "",
-        extension: "",
-        fn: "",
-        ln: "",
-        name: ""
-    })
+    const [editDatas, setEditDatas] = useState({})
 
     function changeSortVal(e) {
         setSort(!sort);
@@ -28,29 +22,31 @@ export default function Table({data , tableValue , styleValue}) {
 
     function valuesOfData(dataValue) {
         setEditDatas(dataValue);
-    }   
-    
+    }
+
     return (
         <div>
             <div className='total-table-div'>
                 <div className='table-head-container'>
-                        {
-                            data.map((heading) => (
+                    {
+                        tableHeading.map((heading) => {
+                            return (
                                 <div className='table-head-div' style={heading.width}>
                                     <span key={heading.id}>{heading.value}</span>
                                     {heading.sortable ?
                                         <img alt="Sort Icon" src={sort ? sortIcon : sortIconDefault} className='sort-icon' id={heading.id} onClick={(e) => changeSortVal(e)} /> : ''}
                                 </div>
-                            ))
-                        }
+                            )
+                        })
+                    }
                 </div>
                 <div className='table-entries-set'>{
-                    tableValue.map((data) => (
-                        <div className='table-data-container'>                            
-                            <TableData key={data.id} content={data} stylesDiv={styleValue}/>
+                    tableData.map((dataObj) => (
+                        <div className='table-data-container'>
+                            <TableData key={dataObj.id} rowData={dataObj} tableDataWidth={tableDataWidth} />
                             <div className='edit-delete-div'>
-                                <img src={edit} className='edit-Icon' onClick={() => { popUpFunction(); valuesOfData(data); }} />
-                                <img src={deleteIcon} className='delete-Icon'></img>
+                                {isEditable && <img src={edit} className='edit-Icon' onClick={() => { popUpFunction(); valuesOfData(dataObj); }} />}
+                                {isDeletable && <img src={deleteIcon} className='delete-Icon' />}                                
                             </div>
                         </div>
                     ))

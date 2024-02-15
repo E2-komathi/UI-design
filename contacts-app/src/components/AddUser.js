@@ -17,58 +17,74 @@ function AddUser() {
     const [dropDownValue, setDropDownValue] = useState('Unit #');
 
     const tableHeading = [
-        {
-            id: "Unit #",
-            value: "Unit #",
-            width: { width: '6%' }
-        },
-        {
-            id: "CATIE Extension",
-            value: "CATIE Extension",
-            width: { width: '14%' }
-        },
-        {
-            id: "First Name",
-            value: "First Name",
-            sortable: true,
-            width: { width: '14%' }
-        },
-        {
-            id: "Last Name",
-            value: "Last Name",
-            sortable: true,
-            width: { width: '14%' }
-        },
-        {
-            id: "Username",
-            value: "Username",
-            width: { width: '14%' }
-        },
-        {
-            id: "MANAGE",
-            value: "MANAGE",
-            width: { width: '35%', 'text-align': 'end' }
-        }
+        { id: "Unit #", value: "Unit #", width: { width: '6%' } },
+        { id: "CATIE Extension", value: "CATIE Extension", width: { width: '14%' } },
+        { id: "First Name", value: "First Name", sortable: true, width: { width: '14%' } },
+        { id: "Last Name", value: "Last Name", sortable: true, width: { width: '14%' } },
+        { id: "Username", value: "Username", width: { width: '14%' } },
+        { id: "MANAGE", value: "MANAGE", width: { width: '35%', 'text-align': 'end' } }
     ];
+
+    const tableDataWidth = [{ width: '10%', 'color': '#438AFE' }, { width: '23%', 'color': '#438AFE' }, { width: '23%' }, { width: '23%' }, { width: '23%' }];
 
     const tableValue = [
         {
-            id: "01",
-            extension: "91829",
-            fn: "djfhdjfh",
-            ln: "jfhjsh",
-            name: "jhdfjshjdh"
+            id: "10",
+            extension: "5001",
+            fn: "Kate",
+            ln: "Adams",
+            name: "kadams@mycatie.com"
+        },
+        {
+            id: "11",
+            extension: "5002",
+            fn: "Brad",
+            ln: "Davidson",
+            name: "bdavidson@mycatie.com"
+        },
+        {
+            id: "12",
+            extension: "5003",
+            fn: "Mary",
+            ln: "Faukner",
+            name: "mfaulkner@mycatie.com"
+        },
+        {
+            id: "13",
+            extension: "5004",
+            fn: "Sara",
+            ln: "Morgan",
+            name: "smorgan@mycatie.com"
+        },
+        {
+            id: "14",
+            extension: "5005",
+            fn: "John",
+            ln: "Nelson",
+            name: "jnelson@mycatie.com"
+        },
+        {
+            id: "15",
+            extension: "5005",
+            fn: "Duncan",
+            ln: "Peterson",
+            name: "dpeterson@mycatie.com"
+        },
+        {
+            id: "16",
+            extension: "5006",
+            fn: "Jeffrey",
+            ln: "Reed",
+            name: "jreed@mycatie.com"
+        },
+        {
+            id: "17",
+            extension: "5007",
+            fn: "Olivia",
+            ln: "Stuart",
+            name: "ostuart@mycatie.com"
         }
     ];
-
-    const eachFieldStyle = [
-        {
-            id: '10%',
-            extension: '23%',
-            fn: '23%',
-            ln: '23%',
-            name: '23%'
-        }];
 
     function valuesForSearch(searchData) {
         setSearchValue(searchData);
@@ -129,7 +145,13 @@ function AddUser() {
                     <span id='service-name'>User Details - All</span>
                     <Pagination />
                 </div>
-                <Table data={tableHeading} tableValue={tableValue} styleValue={eachFieldStyle} />
+                <Table
+                    tableHeading={tableHeading}
+                    tableData={tableValue}
+                    tableDataWidth={tableDataWidth}
+                    isEditable={true}
+                    isDeletable={true}
+                />
                 <div className='bottom-pagination-container'>
                     <Pagination />
                 </div>
