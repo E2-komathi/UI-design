@@ -1,7 +1,6 @@
 .dashboard-content{
     margin-left: 1%;
     height: 100%;
-    overflow: auto;
 }
 
 .dashboard-card-1 , .dashboard-card-2 ,.dashboard-card-3 {

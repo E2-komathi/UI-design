@@ -13,7 +13,7 @@
 
 .table-entries-set{
     width: 100%;
-    border-bottom: 2px solid #efededdb;
+    border-bottom: 1px solid #efededdb;
 }
 
 .table-data-container{
@@ -24,6 +24,7 @@
     letter-spacing: 0.26px;
     color: #555555;
     opacity: 1;
+    border-bottom: 1px solid #efededdb;
 }
 
 .table-head-container {

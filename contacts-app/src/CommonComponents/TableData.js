@@ -3,7 +3,8 @@ function TableData({rowData, tableDataWidth}) {
     const single_row_data = {
         'display': 'flex',
         'width': '62%',
-        'text-align': 'left'
+        'text-align': 'left',
+        'align-items': 'center'
     }
 
     const dataObj = Object.values(rowData);
