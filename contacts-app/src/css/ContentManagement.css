@@ -1,35 +1,38 @@
-.content-management-container{
+.content-management-container {
     margin-left: 1%;
     width: 99%;
     height: 100%;
 }
 
-.search-pagination-container{
+.search-pagination-container {
     display: flex;
     justify-content: space-between;
-    height: 4%;
+    height: 6%;
     width: 97%;
-    margin-top:10px;
+    align-items: center;
 }
 
-.table-for-content-management{
+.table-for-content-management {
     width: 95%;
     margin-top: 2%;
 }
 
-.globe-icon{
-    width:20px;
-    height:19px;
+.globe-icon {
+    width: 20px;
+    height: 19px;
 }
-.mobile-icon{
-    width:14px;
-    height:20px;
+
+.mobile-icon {
+    width: 14px;
+    height: 20px;
 }
-.tablet-icon{
-    width:18px;
-    height:20px;
+
+.tablet-icon {
+    width: 18px;
+    height: 20px;
 }
-.tv-icon{
-    width:25px;
-    height:20px;
+
+.tv-icon {
+    width: 25px;
+    height: 20px;
 }

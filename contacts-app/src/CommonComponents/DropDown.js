@@ -8,44 +8,45 @@ export default function DropDown(props) {
 
     function selectValue(e) {
         props.fieldValue(e.target.textContent);
+        console.log(e.target.textContent)
         setIsActive(!isActive);
     }
 
     useEffect(() => {
         const checkIfClickedOutside = (e) => {
-          if (isActive && ref.current && !ref.current.contains(e.target)) {
-            setIsActive(!isActive)
-          }
-        }    
+            if (!ref.current.contains(e.target)) {      
+                setIsActive(false)
+            }
+        };
         document.addEventListener("mousedown", checkIfClickedOutside)
         return () => {
             document.removeEventListener("mousedown", checkIfClickedOutside)
         }
-      }, [isActive])
-    
+    },[isActive]); 
+
 
     return (
         <div className="drop-down-div">
-                <div onClick={() => {
-                    setIsActive(!isActive);
-                }} className="dropdown-btn">
-                    {props.initialValue}
+            <div onClick={() => {
+                setIsActive(!isActive);
+            }} className="dropdown-btn">
+                {props.initialValue}
 
-                    <span className="drop-down-icon-container">
-                        {isActive ?
-                            <img src={dropDown} className="drop-down-icon-inverse" /> : <img src={dropDown} className="drop-down-icon" />}
-                    </span>
-                </div>
-                <div className="dropdown-content" ref={ref} 
-                    style={{ display: isActive ? "block" : "none" }}>
-                    {
-                        props.data.map((item) => (
-                            <div onClick={selectValue} className="item">
-                                {item}
-                            </div>
-                        ))
-                    }
-                </div>
+                <span className="drop-down-icon-container">
+                    {isActive ?
+                        <img src={dropDown} className="drop-down-icon-inverse" alt="drop-down-arrow"/> : <img src={dropDown} className="drop-down-icon"  alt="drop-down-arrow"/>}
+                </span>
+            </div>
+            <div className="dropdown-content" 
+                style={{ display: isActive ? "block" : "none" }}  ref={ref}>
+                {
+                    props.data.map((item) => (
+                        <div onClick={selectValue} className="item">
+                            {item}
+                        </div>
+                    ))
+                }
+            </div>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../css/AddUnitPopUp.css';
 import tabletImg from '../assets/tablet.png';
-import tvImg from '../assets/Tv.png';
+import tvImg from '../assets/tv-solid.png';
 import tvDarkImg from '../assets/tvDark.png';
 import tvLiteImg from '../assets/tvLite.png';
 import '../css/CommonFontAndStyles.css';
@@ -46,7 +46,6 @@ function AddUnitPopUp(props) {
     useEffect(() => {
         if (props.datas !== null)
             setUserDatas(props.datas)
-        console.log(props.datas)
     }, [])
 
     return (

@@ -5,6 +5,9 @@ import {Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import './css/Main.css';
 import ContentManagement from './components/ContentManagement';
+import UserProfile from './components/UserProfile';
+import DropDownInputField from './CommonComponents/DropDownInputField';
+import Card from './CommonComponents/Card';
 
 function Main() {
 
@@ -21,6 +24,7 @@ function Main() {
                         <Route exact path="/adduser" element={<AddUser />} />
                         <Route exact path="/userGroup" element={<UserGroup />} />
                         <Route exact path="/contentManagement" element={<ContentManagement />} />
+                        <Route exact path="/userProfile" element={<UserProfile />}/>
                     </Routes>
                 </div>
             </div>

@@ -11,6 +11,7 @@
 .solution-span {
     display: flex;
     align-items: center;
+    padding-top: 6px;
 }
 
 .pop-up-close {
@@ -111,8 +112,8 @@
 }
 
 .tv {
-    width: 40px;
-    height: 40px;
+    width: 33px;
+    height: 26px;
     padding-top: 3px;
 }
 
@@ -167,7 +168,7 @@
     display: flex;
     justify-content: center;
     height: 100%;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
 }
 

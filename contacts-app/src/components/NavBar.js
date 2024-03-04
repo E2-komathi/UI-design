@@ -7,6 +7,7 @@ function NavBar() {
             <NavLink to="/adduser">Add User</NavLink>
             <NavLink to="/userGroup">User Groups</NavLink>
             <NavLink to="/contentManagement">content Management</NavLink>
+            <NavLink to="/userProfile">User Profile</NavLink>
         </div>
     )
 }

@@ -48,9 +48,9 @@
 
 .navigation-text-container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    height: 6%;
     width: 100%;
-    padding-bottom: 10px;
 }
 
 .polygon {
@@ -86,7 +86,7 @@
 }
 
 .pop-up-common-btn {
-    width: 23%;
+    width: 200px;
     height: 50px;
     background-color: #448CCB;
     font: normal normal 600 14px/14px SF-pro-display-semibold;

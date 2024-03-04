@@ -1,0 +1,406 @@
+.user-profile-container {
+    margin-left: 1%;
+    width: 95%;
+    height: 100%;
+}
+
+.user-name-value {
+    font: normal normal bold 14px/20px OpenSans;
+    color: #333333;
+    height: 13%;
+}
+
+.profile-image-container {
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: 3%;
+}
+
+.change-photo {
+    font: normal normal normal 1px/28px Poppins-Regular;
+    color: #1e2022cf;
+    opacity: 1;
+    margin-left: 10%;
+}
+
+.user-details-container {
+    height: 22%;
+    display: flex;
+}
+
+.specific-details-container {
+    width: 88%;
+    padding-top: 27px;
+    height: 70%;
+}
+
+.details-value {
+    font: normal normal bold 12px/17px OpenSans;
+    color: #333333;
+    padding-right: 10px;
+}
+
+.user-details {
+    display: flex;
+    height: 88%;
+}
+
+.contact-details {
+    padding-bottom: 10px;
+}
+
+.details-div-one,
+.details-div-two {
+    width: 38%;
+}
+
+.details-div-three {
+    width: 24%;
+}
+
+.details-div-one>div,
+.details-div-two>div {
+    padding-bottom: 5px;
+    display: flex;
+    height: 30%;
+    align-items: center;
+}
+
+.username-password {
+    display: flex;
+    flex-direction: column;
+    height: 55%;
+}
+
+.user-details-input,
+.user-details-input-email {
+    font: normal normal 600 14px/15px OpenSans-Regular;
+    color: #333333;
+    width: 250px;
+    height: 27px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #707070;
+}
+
+.user-details-input-email {
+    width: 350px;
+}
+
+.landline-img {
+    width: 20px;
+    height: 20px;
+    padding-right: 17px;
+}
+
+.mobile-img {
+    width: 13px;
+    height: 20px;
+    padding-right: 22px;
+}
+
+.email-img {
+    width: 27px;
+    height: 20px;
+    padding-right: 18px;
+}
+
+.username {
+    box-shadow: 0px 5px 8px #00000029;
+    border: 2px solid #3333335e;
+    border-radius: 4px;
+    height: 30px;
+    outline: none;
+    width: 90%;
+    text-align: left;
+    font: normal normal normal 12px/17px OpenSans-Regular;
+    letter-spacing: 0px;
+    color: #333333;
+    padding-left: 7px;
+    margin-top: 6px;
+}
+
+.bio-details-para,
+.input-type-file {
+    font: normal normal normal 12px/32px OpenSans-Regular;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-left: 14%;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    text-align: left;
+    font: normal normal normal 12px/17px OpenSans-Regular;
+    letter-spacing: 0px;
+    color: white;
+    background-color: #448CCB;
+    outline: none;
+    border: 1px solid #B1B4AA;
+    width: 86px;
+    height: 30px;
+}
+
+input[type="file" i] {
+    font: normal normal normal 12px/17px OpenSans-Regular;
+}
+
+.bio-name {
+    display: flex;
+    width: 62%;
+    padding-bottom: 10px;
+    margin-left: 5px;
+}
+
+.main-content-container {
+    height: 60%;
+    width: 100%;
+    display: flex;
+}
+
+.container-one {
+    width: 35%;
+    height: 100%;
+    margin-right: 2%;
+    border-right: 1px solid #938d8d6b;
+}
+
+.container-two {
+    width: 63%;
+    height: 100%;
+}
+
+.user-profile-buttons {
+    height: 12%;
+    width: 100%;
+}
+
+.other-details-div1,
+.other-details-div2,
+.other-details-div3,
+.other-details-div4 {
+    display: flex;
+    margin-left: 5px;
+    height: 13%;
+}
+
+.other-details-div1 {
+    position: relative;
+}
+
+.other-details-div5 {
+    height: 30%;
+}
+
+.other-details-div3 {
+    position: relative;
+    z-index: 9999;
+    height: 15%;
+}
+
+.other-details-div4 {
+    height: 19%;
+    position: relative;
+}
+
+.table-container-div {
+    height: 30%;
+}
+
+.title-div {
+    width: 12%;
+    padding-right: 10px;
+}
+
+.fname-div {
+    width: 170px;
+    padding-right: 7px;
+}
+
+.mid-div {
+    width: 120px;
+    padding-right: 10px;
+}
+
+.lname-div {
+    width: 170px;
+}
+
+.street-div {
+    width: 48%;
+}
+
+.apt-room-div {
+    width: 33%;
+}
+
+.additional-details {
+    height: 5%;
+}
+
+.city-div {
+    width: 44%;
+    padding-right: 5px;
+}
+
+.state-div,
+.zip-div {
+    width: 16%;
+    padding-right: 10px;
+}
+
+.gender-div {
+    width: 23%;
+    padding-right: 5px;
+}
+
+.date-div {
+    width: 15%;
+    padding-right: 10px;
+}
+
+.month-div {
+    padding-top: 25px;
+    width: 23%;
+    padding-right: 3px;
+}
+
+.year-div {
+    padding-top: 25px;
+    width: 16%;
+    padding-right: 5px;
+}
+
+.mandatory-icon {
+    color: #E20303;
+}
+
+.groups-container {
+    height: 8%;
+}
+
+.select-group-container {
+    width: 100%;
+    display: flex;
+    height: 62%;
+}
+
+.select-group {
+    width: 45%;
+}
+
+.card-arrow {
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow,
+.arrow-reverse {
+    width: 40px;
+    height: 32px;
+}
+
+.arrow:hover,
+.arrow-reverse:hover,
+input[type="file"]::-webkit-file-upload-button:hover {
+    cursor: pointer;
+}
+
+.arrow-reverse {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width : 1910px) and (min-width : 1700px),
+screen and (max-height : 1050px) and (min-height : 900px) {
+
+    .user-details-container {
+        height: 25%;
+    }
+
+    .user-details-input {
+        width: 200px;
+    }
+
+    .user-details-input-email {
+        width: 300px;
+    }
+
+    .main-content-container {
+        height: 75%;
+    }
+
+    .user-profile-buttons {
+        height: 16%;
+    }
+
+}
+
+@media screen and (max-width : 1699px) and (min-width : 1400px),
+screen and (max-height : 899px) and (min-height : 768px) {
+    .user-profile-container {
+        width: 99%;
+    }
+
+    .user-details-container {
+        height: 30%;
+    }
+
+    .user-details-input {
+        width: 150px;
+    }
+
+    .user-details-input-email {
+        width: 250px;
+    }
+
+    .main-content-container {
+        height: 80%;
+    }
+
+    .user-profile-buttons {
+        height: 20%;
+    }
+
+    .container-one {
+        width: 38%;
+    }
+}
+
+@media screen and (max-width : 1399px) and (min-width : 1000px){
+    .user-profile-container {
+        width: 99%;
+    }
+
+    .user-details-container {
+        height: 30%;
+    }
+
+    .user-details-input {
+        width: 130px;
+    }
+
+    .user-details-input-email {
+        width: 230px;
+    }
+
+    .main-content-container {
+        height: 85%;
+    }
+
+    .user-profile-buttons {
+        height: 25%;
+    }
+
+    .container-one {
+        width: 50%;
+    }
+}
