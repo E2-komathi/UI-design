@@ -1,0 +1,268 @@
+.slideshow-editor-container {
+    margin-left: 1%;
+    width: 90%;
+    height: 100%;
+}
+
+.slideshow-type {
+    width: 10%;
+    height: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ingage {
+    width: 59%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new-slideshow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slideshow-name {
+    width: 35%;
+    height: 9%;
+    padding-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    height: 40%;
+}
+
+.slides {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.screens {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-heading {
+    height: 10%;
+}
+
+.card-container-main {
+    height: 90%;
+    width: 88%;
+    border-right: 2px solid #7C7A7A38;
+}
+
+.card-for-slides {
+    height: 100%;
+    width: 88%;
+}
+
+.card-for-screens {
+    height: 90%;
+}
+
+.assigned-slides {
+    height: 12%;
+    margin-top: 2%;
+    width: 90%;
+    line-height: 2;
+}
+
+.assigned-slide-images-with-name {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-left: 1%;
+}
+
+.image-div-with-name {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    height: 210px;
+    justify-content: space-between;
+    margin: 0 12px 15px 0;
+}
+
+.slide-img {
+    width: 100%;
+    height: 180px;
+}
+
+.slide-name {
+    font: normal normal normal 13px/22px OpenSans-Regular;
+    letter-spacing: 0.26px;
+    color: #000000;
+}
+
+.scheduling {
+    height: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.display-time {
+    width: 14%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.configurable,
+.allday {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allday {
+    width: 47%;
+}
+
+.drop-down-image {
+    width: 18px;
+    height: 18px;
+}
+
+.time-and-recurrence {
+    width: 90%;
+    height: 30%;
+    display: flex;
+}
+
+.timer-text {
+    font: normal normal bold 14px/19px OpenSans;
+    letter-spacing: 0px;
+    color: #00000093;
+}
+
+.drop-down-section,
+.date-select {
+    width: 81px;
+    height: 30px;
+    border: 1px solid #00000045;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.date-select {
+    width: 150px;
+    margin-left: 10px;
+}
+
+.start-date-select-div,
+.end-date-select-div , 
+.no-end-date-div{
+    height: 20%;
+    display: flex;
+    width: 62%;
+    align-items: center;
+}
+
+.end-date-select-div{
+    width: 80%;
+}
+
+.calendar-image {
+    width: 19px;
+    height: 22px;
+}
+
+.time-picker-div {
+    width: 17%;
+}
+
+.start-time,
+.end-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.start-time-container,
+.end-time-container {
+    height: 40%;
+    display: grid;
+    width: 80%;
+    margin-bottom: 4%;
+}
+
+.recurrence-container {
+    width: 69%;
+    height: 90%;
+}
+
+.recurrence-div {
+    display: flex;
+    width: 13%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-styles {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.occurence-type-container {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 1%;
+    height: 100%;
+}
+
+.number-of-days-div {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    outline: none;
+}
+
+.container-recurrence-one {
+    width: 50%;
+    height: 100%;
+}
+
+.container-recurrence-two {
+    width: 40%;
+    height: 100%;
+}
+
+.recurrence-section {
+    display: flex;
+    height: 20%;
+    align-items: center;
+}
+
+.recurrence-type {
+    display: flex;
+    width: 28%;
+    align-items: end;
+}
+
+.daily-checkbox {
+    display: flex;
+    width: 46%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cancel-save{
+    height: 8%;
+    width: 90%;
+    text-align: center;
+}

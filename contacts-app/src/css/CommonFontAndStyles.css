@@ -59,8 +59,7 @@
 }
 
 .service-name-container {
-    padding-top: 10px;
-    padding-bottom: 25px;
+    height: 5%;
 }
 
 #service-name , #unit-text {

@@ -6,7 +6,7 @@ import '../css/DashBoard.css';
 function Dashboard() {
   return (
     <div className="dashboard-content" >
-      <span id="navigation-text">Dashboard</span>
+      <span id="navigation-text" data-testid='dashboard-text'>Dashboard</span>
 
       <div className="dashboard-cards">
 
@@ -22,7 +22,7 @@ function Dashboard() {
             <span className="div-details">You can also select Users and Groups from the navigation to the left to manage Users and Groups.</span>
           </div>
           <div className="dashboard-button-div">
-            <button className="dashboard-btn">Add User</button>
+            <button className="dashboard-btn" id="dashBoard-addUser">Add User</button>
           </div>
         </div>
 
@@ -38,7 +38,7 @@ function Dashboard() {
             <span className="div-details">You can also select Users and Groups from the navigation to the left to manage Groups.</span>
           </div>
           <div className="dashboard-button-div">
-            <button className="dashboard-btn">Add Group</button>
+            <button className="dashboard-btn" id="dashBoard-addGroup">Add Group</button>
           </div>
         </div>
 
@@ -54,7 +54,7 @@ function Dashboard() {
             <span className="div-details">Configure, manage and edit settings on you CATIE mobile application.</span>
           </div>
           <div className="dashboard-button-div">
-            <button className="dashboard-btn">Manage System</button>
+            <button className="dashboard-btn" id="dashBoard-manageSystem">Manage System</button>
           </div>
         </div>
 

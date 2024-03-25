@@ -8,6 +8,8 @@ import ContentManagement from './components/ContentManagement';
 import UserProfile from './components/UserProfile';
 import DropDownInputField from './CommonComponents/DropDownInputField';
 import Card from './CommonComponents/Card';
+import AddSlide from './components/AddSlide';
+import SlideShowEditor from './components/SlideShowEditor';
 
 function Main() {
 
@@ -25,6 +27,8 @@ function Main() {
                         <Route exact path="/userGroup" element={<UserGroup />} />
                         <Route exact path="/contentManagement" element={<ContentManagement />} />
                         <Route exact path="/userProfile" element={<UserProfile />}/>
+                        <Route exact path="/addSlide" element={<AddSlide />}/>
+                        <Route exact path="/slideshow" element={<SlideShowEditor />} />
                     </Routes>
                 </div>
             </div>

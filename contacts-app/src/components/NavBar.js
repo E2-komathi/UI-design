@@ -8,6 +8,8 @@ function NavBar() {
             <NavLink to="/userGroup">User Groups</NavLink>
             <NavLink to="/contentManagement">content Management</NavLink>
             <NavLink to="/userProfile">User Profile</NavLink>
+            <NavLink to="/addSlide"> Add SLide</NavLink>
+            <NavLink to="/slideshow">Slide Show</NavLink>
         </div>
     )
 }

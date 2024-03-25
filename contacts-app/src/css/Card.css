@@ -8,6 +8,8 @@
 
 .card-div{
     height: 100%;
+    width: 100%;
+    display: flex;
 }
 
 .title-container {
@@ -47,7 +49,7 @@
 }
 
 .card-content-div {
-    height: 73%;
+    height: 83%;
     box-shadow: 0px 10px 20px #00000033;
     border: 1px solid #E8E7E7;
     border-radius: 0px 0px 10px 10px;
@@ -58,7 +60,7 @@
     width: 98%;
     margin-left: 3%;
     height: 12%;
-    padding-top: 10px;
+    padding : 5px 0px;
 }
 
 .list-of-items {
@@ -87,4 +89,33 @@
 
 .list-of-items::-webkit-scrollbar {    
     width: 4px;
+}
+
+.lhs-card ,
+.rhs-card {
+    width: 46%;
+}
+
+.card-arrow {
+    display: flex;
+    flex-direction: column;
+    width: 8%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow,
+.arrow-reverse {
+    width: 40px;
+    height: 32px;
+}
+
+.arrow:hover,
+.arrow-reverse:hover,
+input[type="file"]::-webkit-file-upload-button:hover {
+    cursor: pointer;
+}
+
+.arrow-reverse {
+    transform: rotate(180deg);
 }

@@ -249,22 +249,13 @@ function UserProfile() {
                         <span className="user-name-value">Groups</span>
                     </div>
                     <div className="select-group-container">
-                        <div className="select-group">
-                            <Card titleName={'Available Groups'}
-                                titleColor={{ 'background-color': '#448CCB' }}
-                                lhsList={availableGroups}
-                            />
-                        </div>
-                        <div className="card-arrow">
-                            <img src={arrow} className="arrow" />
-                            <img src={arrow} className="arrow-reverse" />
-                        </div>
-                        <div className="select-group">
-                            <Card titleName={'Assigned Groups'}
-                                titleColor={{ 'background-color': '#000000' }}
-                                lhsList={assignedGroups}
-                            />
-                        </div>
+                        <Card
+                            titleName1={'Available Groups'}
+                            titleColor1={{ 'background-color': '#448CCB' }}
+                            titleName2={'Assigned Groups'}
+                            titleColor2={{ 'background-color': '#000000' }}
+                            lhsList={availableGroups}
+                        />
                     </div>
 
                 </div>

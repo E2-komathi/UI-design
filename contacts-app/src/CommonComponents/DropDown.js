@@ -4,32 +4,32 @@ import dropDown from '../assets/dropDown.png';
 
 export default function DropDown(props) {
     const [isActive, setIsActive] = useState(false);
-    const ref = useRef()
+    const dropDownData = useRef();
+    const initialDiv = useRef();
 
     function selectValue(e) {
         props.fieldValue(e.target.textContent);
-        console.log(e.target.textContent)
         setIsActive(!isActive);
     }
 
-    useEffect(() => {
-        const checkIfClickedOutside = (e) => {
-            if (!ref.current.contains(e.target)) {      
-                setIsActive(false)
-            }
-        };
-        document.addEventListener("mousedown", checkIfClickedOutside)
-        return () => {
-            document.removeEventListener("mousedown", checkIfClickedOutside)
+    function checkIfClickedOutside(e) {
+        if (e.target !== dropDownData.current && e.target !== initialDiv.current) {      
+            setIsActive(false)
         }
-    },[isActive]); 
+    }
 
+    useEffect(() => {
+        window.addEventListener("click", checkIfClickedOutside)
+        return () => {
+            window.removeEventListener("click", checkIfClickedOutside)
+        }
+    },[isActive]);   
 
     return (
         <div className="drop-down-div">
             <div onClick={() => {
                 setIsActive(!isActive);
-            }} className="dropdown-btn">
+            }} className="dropdown-btn" ref={initialDiv}>
                 {props.initialValue}
 
                 <span className="drop-down-icon-container">
@@ -38,7 +38,7 @@ export default function DropDown(props) {
                 </span>
             </div>
             <div className="dropdown-content" 
-                style={{ display: isActive ? "block" : "none" }}  ref={ref}>
+                style={{ display: isActive ? "block" : "none" }}  ref={dropDownData}>
                 {
                     props.data.map((item) => (
                         <div onClick={selectValue} className="item">
